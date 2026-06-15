@@ -1,0 +1,2405 @@
+{
+  "backtest_name": "四策略分层独立回测对比",
+  "date": "2026-06-09 22:29",
+  "backtest_period": "2024-06-01 ~ 2026-06-05",
+  "trading_days": 487,
+  "total_stocks": 100,
+  "sample_size": 100,
+  "params": {
+    "initial_capital": 1000000,
+    "stop_loss": 0.1,
+    "take_profit": 0.15,
+    "max_holding_days": 10,
+    "max_positions": 8,
+    "position_size": 0.15,
+    "rebalance_freq": 5,
+    "commission": 0.0003,
+    "hmm_threshold": 0.4,
+    "tech_threshold_B": 60,
+    "tech_threshold_C": 50
+  },
+  "strategies": {
+    "A": {
+      "strategy": "仅HMM",
+      "strategy_id": "A",
+      "initial_capital": 1000000,
+      "final_capital": 1328723.69,
+      "total_return": 0.3287,
+      "annual_return": 0.1584,
+      "max_drawdown": -0.1042,
+      "sharpe_ratio": 1.07,
+      "win_rate": 0.5072,
+      "profit_factor": 1.46,
+      "total_trades": 714,
+      "sell_trades": 349,
+      "avg_holding_days": 9.7,
+      "exit_reasons": {
+        "timeout": 302,
+        "take_profit": 24,
+        "stop_loss": 23,
+        "backtest_end": 8
+      },
+      "equity_curve": [
+        {
+          "date": "2024-06-03",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-06-11",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-06-18",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-06-25",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-07-02",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-07-09",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-07-16",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-07-23",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-07-30",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-08-06",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-08-13",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-08-20",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-08-27",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-09-03",
+          "equity": 1024725.04
+        },
+        {
+          "date": "2024-09-10",
+          "equity": 1003787.04
+        },
+        {
+          "date": "2024-09-19",
+          "equity": 979838.91
+        },
+        {
+          "date": "2024-09-26",
+          "equity": 1055361.91
+        },
+        {
+          "date": "2024-10-10",
+          "equity": 1166644.84
+        },
+        {
+          "date": "2024-10-17",
+          "equity": 1100152.77
+        },
+        {
+          "date": "2024-10-24",
+          "equity": 1138302.84
+        },
+        {
+          "date": "2024-10-31",
+          "equity": 1141334.53
+        },
+        {
+          "date": "2024-11-07",
+          "equity": 1195964.11
+        },
+        {
+          "date": "2024-11-14",
+          "equity": 1170761.59
+        },
+        {
+          "date": "2024-11-21",
+          "equity": 1162487.78
+        },
+        {
+          "date": "2024-11-28",
+          "equity": 1134436.1
+        },
+        {
+          "date": "2024-12-05",
+          "equity": 1130785.16
+        },
+        {
+          "date": "2024-12-12",
+          "equity": 1148416.1
+        },
+        {
+          "date": "2024-12-19",
+          "equity": 1134030.26
+        },
+        {
+          "date": "2024-12-26",
+          "equity": 1144453.71
+        },
+        {
+          "date": "2025-01-03",
+          "equity": 1092988.34
+        },
+        {
+          "date": "2025-01-10",
+          "equity": 1092241.52
+        },
+        {
+          "date": "2025-01-17",
+          "equity": 1119384.26
+        },
+        {
+          "date": "2025-01-24",
+          "equity": 1123602.94
+        },
+        {
+          "date": "2025-02-10",
+          "equity": 1136978.14
+        },
+        {
+          "date": "2025-02-17",
+          "equity": 1153575.06
+        },
+        {
+          "date": "2025-02-24",
+          "equity": 1197486.66
+        },
+        {
+          "date": "2025-03-03",
+          "equity": 1177065.98
+        },
+        {
+          "date": "2025-03-10",
+          "equity": 1175868.29
+        },
+        {
+          "date": "2025-03-17",
+          "equity": 1186789.84
+        },
+        {
+          "date": "2025-03-24",
+          "equity": 1158488.21
+        },
+        {
+          "date": "2025-03-31",
+          "equity": 1154177.97
+        },
+        {
+          "date": "2025-04-08",
+          "equity": 1132459.95
+        },
+        {
+          "date": "2025-04-15",
+          "equity": 1161751.71
+        },
+        {
+          "date": "2025-04-22",
+          "equity": 1163271.63
+        },
+        {
+          "date": "2025-04-29",
+          "equity": 1149894.05
+        },
+        {
+          "date": "2025-05-09",
+          "equity": 1171288.83
+        },
+        {
+          "date": "2025-05-16",
+          "equity": 1176813.48
+        },
+        {
+          "date": "2025-05-23",
+          "equity": 1181161.66
+        },
+        {
+          "date": "2025-05-30",
+          "equity": 1178930.82
+        },
+        {
+          "date": "2025-06-09",
+          "equity": 1184837.67
+        },
+        {
+          "date": "2025-06-16",
+          "equity": 1174778.61
+        },
+        {
+          "date": "2025-06-23",
+          "equity": 1160520.45
+        },
+        {
+          "date": "2025-06-30",
+          "equity": 1192789.9
+        },
+        {
+          "date": "2025-07-07",
+          "equity": 1184719.32
+        },
+        {
+          "date": "2025-07-14",
+          "equity": 1204970.82
+        },
+        {
+          "date": "2025-07-21",
+          "equity": 1242623.01
+        },
+        {
+          "date": "2025-07-28",
+          "equity": 1250619.83
+        },
+        {
+          "date": "2025-08-04",
+          "equity": 1228820.04
+        },
+        {
+          "date": "2025-08-11",
+          "equity": 1249196.33
+        },
+        {
+          "date": "2025-08-18",
+          "equity": 1270914.1
+        },
+        {
+          "date": "2025-08-25",
+          "equity": 1301854.18
+        },
+        {
+          "date": "2025-09-01",
+          "equity": 1312910.6
+        },
+        {
+          "date": "2025-09-08",
+          "equity": 1315528.1
+        },
+        {
+          "date": "2025-09-15",
+          "equity": 1321973.59
+        },
+        {
+          "date": "2025-09-22",
+          "equity": 1325788.72
+        },
+        {
+          "date": "2025-09-29",
+          "equity": 1321870.18
+        },
+        {
+          "date": "2025-10-14",
+          "equity": 1311150.16
+        },
+        {
+          "date": "2025-10-21",
+          "equity": 1309480.49
+        },
+        {
+          "date": "2025-10-28",
+          "equity": 1335831.5
+        },
+        {
+          "date": "2025-11-04",
+          "equity": 1319385.32
+        },
+        {
+          "date": "2025-11-11",
+          "equity": 1338246.02
+        },
+        {
+          "date": "2025-11-18",
+          "equity": 1336738.66
+        },
+        {
+          "date": "2025-11-25",
+          "equity": 1315876.92
+        },
+        {
+          "date": "2025-12-02",
+          "equity": 1318848.16
+        },
+        {
+          "date": "2025-12-09",
+          "equity": 1311149.08
+        },
+        {
+          "date": "2025-12-16",
+          "equity": 1300404.92
+        },
+        {
+          "date": "2025-12-23",
+          "equity": 1337933.1
+        },
+        {
+          "date": "2025-12-30",
+          "equity": 1338072.48
+        },
+        {
+          "date": "2026-01-08",
+          "equity": 1369334.55
+        },
+        {
+          "date": "2026-01-15",
+          "equity": 1375823.44
+        },
+        {
+          "date": "2026-01-22",
+          "equity": 1398425.93
+        },
+        {
+          "date": "2026-01-29",
+          "equity": 1393950.37
+        },
+        {
+          "date": "2026-02-05",
+          "equity": 1386686.92
+        },
+        {
+          "date": "2026-02-12",
+          "equity": 1395908.33
+        },
+        {
+          "date": "2026-02-27",
+          "equity": 1441903.44
+        },
+        {
+          "date": "2026-03-06",
+          "equity": 1430763.86
+        },
+        {
+          "date": "2026-03-13",
+          "equity": 1442421.32
+        },
+        {
+          "date": "2026-03-20",
+          "equity": 1399145.68
+        },
+        {
+          "date": "2026-03-27",
+          "equity": 1412078.5
+        },
+        {
+          "date": "2026-04-03",
+          "equity": 1395480.8
+        },
+        {
+          "date": "2026-04-13",
+          "equity": 1439236.77
+        },
+        {
+          "date": "2026-04-20",
+          "equity": 1455213.7
+        },
+        {
+          "date": "2026-04-27",
+          "equity": 1458268.32
+        },
+        {
+          "date": "2026-05-07",
+          "equity": 1457034.0
+        },
+        {
+          "date": "2026-05-14",
+          "equity": 1433086.22
+        },
+        {
+          "date": "2026-05-21",
+          "equity": 1398509.19
+        },
+        {
+          "date": "2026-05-28",
+          "equity": 1370008.75
+        },
+        {
+          "date": "2026-06-04",
+          "equity": 1331766.2
+        }
+      ],
+      "trades_sample": [
+        {
+          "date": "2024-08-27",
+          "code": "000792",
+          "name": "盐湖股份",
+          "action": "BUY",
+          "price": 13.96,
+          "shares": 10700,
+          "up_prob": 1.0,
+          "comp_score": 45,
+          "reason": "strategy_A"
+        },
+        {
+          "date": "2024-08-27",
+          "code": "000858",
+          "name": "五粮液",
+          "action": "BUY",
+          "price": 117.7,
+          "shares": 1000,
+          "up_prob": 1.0,
+          "comp_score": 50,
+          "reason": "strategy_A"
+        },
+        {
+          "date": "2024-08-27",
+          "code": "000876",
+          "name": "新希望",
+          "action": "BUY",
+          "price": 8.9,
+          "shares": 12300,
+          "up_prob": 1.0,
+          "comp_score": 50,
+          "reason": "strategy_A"
+        },
+        {
+          "date": "2024-08-27",
+          "code": "000963",
+          "name": "华东医药",
+          "action": "BUY",
+          "price": 29.56,
+          "shares": 3100,
+          "up_prob": 1.0,
+          "comp_score": 85,
+          "reason": "strategy_A"
+        },
+        {
+          "date": "2024-08-27",
+          "code": "000999",
+          "name": "华润三九",
+          "action": "BUY",
+          "price": 43.26,
+          "shares": 1800,
+          "up_prob": 1.0,
+          "comp_score": 80,
+          "reason": "strategy_A"
+        },
+        {
+          "date": "2024-08-27",
+          "code": "001389",
+          "name": "广合科技",
+          "action": "BUY",
+          "price": 35.07,
+          "shares": 1900,
+          "up_prob": 1.0,
+          "comp_score": 50,
+          "reason": "strategy_A"
+        },
+        {
+          "date": "2024-08-27",
+          "code": "002074",
+          "name": "国轩高科",
+          "action": "BUY",
+          "price": 18.08,
+          "shares": 3200,
+          "up_prob": 1.0,
+          "comp_score": 45,
+          "reason": "strategy_A"
+        },
+        {
+          "date": "2024-08-27",
+          "code": "002126",
+          "name": "银轮股份",
+          "action": "BUY",
+          "price": 14.95,
+          "shares": 3300,
+          "up_prob": 1.0,
+          "comp_score": 45,
+          "reason": "strategy_A"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "000792",
+          "name": "盐湖股份",
+          "action": "SELL",
+          "price": 14.81,
+          "entry_price": 13.96,
+          "shares": 10700,
+          "pnl_pct": 6.09,
+          "pnl_amount": 9047.46,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "000858",
+          "name": "五粮液",
+          "action": "SELL",
+          "price": 116.43,
+          "entry_price": 117.7,
+          "shares": 1000,
+          "pnl_pct": -1.08,
+          "pnl_amount": -1304.93,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "000876",
+          "name": "新希望",
+          "action": "SELL",
+          "price": 8.66,
+          "entry_price": 8.9,
+          "shares": 12300,
+          "pnl_pct": -2.7,
+          "pnl_amount": -2983.96,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "000963",
+          "name": "华东医药",
+          "action": "SELL",
+          "price": 28.18,
+          "entry_price": 29.56,
+          "shares": 3100,
+          "pnl_pct": -4.67,
+          "pnl_amount": -4304.21,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "000999",
+          "name": "华润三九",
+          "action": "SELL",
+          "price": 40.87,
+          "entry_price": 43.26,
+          "shares": 1800,
+          "pnl_pct": -5.52,
+          "pnl_amount": -4324.07,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "001389",
+          "name": "广合科技",
+          "action": "SELL",
+          "price": 36.03,
+          "entry_price": 35.07,
+          "shares": 1900,
+          "pnl_pct": 2.74,
+          "pnl_amount": 1803.46,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "002074",
+          "name": "国轩高科",
+          "action": "SELL",
+          "price": 18.29,
+          "entry_price": 18.08,
+          "shares": 3200,
+          "pnl_pct": 1.16,
+          "pnl_amount": 654.44,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "002126",
+          "name": "银轮股份",
+          "action": "SELL",
+          "price": 16.53,
+          "entry_price": 14.95,
+          "shares": 3300,
+          "pnl_pct": 10.57,
+          "pnl_amount": 5197.64,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "000792",
+          "name": "盐湖股份",
+          "action": "BUY",
+          "price": 14.81,
+          "shares": 10100,
+          "up_prob": 1.0,
+          "comp_score": 80,
+          "reason": "strategy_A"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "000858",
+          "name": "五粮液",
+          "action": "BUY",
+          "price": 116.43,
+          "shares": 1100,
+          "up_prob": 1.0,
+          "comp_score": 45,
+          "reason": "strategy_A"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "000876",
+          "name": "新希望",
+          "action": "BUY",
+          "price": 8.66,
+          "shares": 12500,
+          "up_prob": 1.0,
+          "comp_score": 45,
+          "reason": "strategy_A"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "000963",
+          "name": "华东医药",
+          "action": "BUY",
+          "price": 28.18,
+          "shares": 3200,
+          "up_prob": 1.0,
+          "comp_score": 50,
+          "reason": "strategy_A"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "000999",
+          "name": "华润三九",
+          "action": "BUY",
+          "price": 40.87,
+          "shares": 1900,
+          "up_prob": 1.0,
+          "comp_score": 85,
+          "reason": "strategy_A"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "001389",
+          "name": "广合科技",
+          "action": "BUY",
+          "price": 36.03,
+          "shares": 1800,
+          "up_prob": 1.0,
+          "comp_score": 50,
+          "reason": "strategy_A"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "002074",
+          "name": "国轩高科",
+          "action": "BUY",
+          "price": 18.29,
+          "shares": 3100,
+          "up_prob": 1.0,
+          "comp_score": 85,
+          "reason": "strategy_A"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "002126",
+          "name": "银轮股份",
+          "action": "BUY",
+          "price": 16.53,
+          "shares": 2900,
+          "up_prob": 1.0,
+          "comp_score": 80,
+          "reason": "strategy_A"
+        },
+        {
+          "date": "2024-09-26",
+          "code": "000792",
+          "name": "盐湖股份",
+          "action": "SELL",
+          "price": 15.99,
+          "entry_price": 14.81,
+          "shares": 10100,
+          "pnl_pct": 7.97,
+          "pnl_amount": 11869.55,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-26",
+          "code": "000858",
+          "name": "五粮液",
+          "action": "SELL",
+          "price": 134.31,
+          "entry_price": 116.43,
+          "shares": 1100,
+          "pnl_pct": 15.36,
+          "pnl_amount": 19623.68,
+          "hold_days": 10,
+          "reason": "take_profit"
+        },
+        {
+          "date": "2024-09-26",
+          "code": "000876",
+          "name": "新希望",
+          "action": "SELL",
+          "price": 9.12,
+          "entry_price": 8.66,
+          "shares": 12500,
+          "pnl_pct": 5.31,
+          "pnl_amount": 5715.8,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-26",
+          "code": "000963",
+          "name": "华东医药",
+          "action": "SELL",
+          "price": 30.76,
+          "entry_price": 28.18,
+          "shares": 3200,
+          "pnl_pct": 9.16,
+          "pnl_amount": 8226.47,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-26",
+          "code": "000999",
+          "name": "华润三九",
+          "action": "SELL",
+          "price": 40.7,
+          "entry_price": 40.87,
+          "shares": 1900,
+          "pnl_pct": -0.42,
+          "pnl_amount": -346.2,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-26",
+          "code": "001389",
+          "name": "广合科技",
+          "action": "SELL",
+          "price": 36.58,
+          "entry_price": 36.03,
+          "shares": 1800,
+          "pnl_pct": 1.53,
+          "pnl_amount": 970.25,
+          "hold_days": 10,
+          "reason": "timeout"
+        }
+      ]
+    },
+    "B": {
+      "strategy": "仅技术信号",
+      "strategy_id": "B",
+      "initial_capital": 1000000,
+      "final_capital": 1146760.26,
+      "total_return": 0.1468,
+      "annual_return": 0.0734,
+      "max_drawdown": -0.1667,
+      "sharpe_ratio": 0.56,
+      "win_rate": 0.4812,
+      "profit_factor": 1.38,
+      "total_trades": 706,
+      "sell_trades": 345,
+      "avg_holding_days": 9.8,
+      "exit_reasons": {
+        "timeout": 312,
+        "take_profit": 18,
+        "stop_loss": 15,
+        "backtest_end": 8
+      },
+      "equity_curve": [
+        {
+          "date": "2024-06-03",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-06-11",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-06-18",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-06-25",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-07-02",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-07-09",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-07-16",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-07-23",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-07-30",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-08-06",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-08-13",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-08-20",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-08-27",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-09-03",
+          "equity": 1013565.38
+        },
+        {
+          "date": "2024-09-10",
+          "equity": 984257.38
+        },
+        {
+          "date": "2024-09-19",
+          "equity": 969505.38
+        },
+        {
+          "date": "2024-09-26",
+          "equity": 1037951.38
+        },
+        {
+          "date": "2024-10-10",
+          "equity": 1101324.74
+        },
+        {
+          "date": "2024-10-17",
+          "equity": 1058500.31
+        },
+        {
+          "date": "2024-10-24",
+          "equity": 1083160.13
+        },
+        {
+          "date": "2024-10-31",
+          "equity": 1082776.03
+        },
+        {
+          "date": "2024-11-07",
+          "equity": 1123179.43
+        },
+        {
+          "date": "2024-11-14",
+          "equity": 1097829.64
+        },
+        {
+          "date": "2024-11-21",
+          "equity": 1086716.07
+        },
+        {
+          "date": "2024-11-28",
+          "equity": 1057699.79
+        },
+        {
+          "date": "2024-12-05",
+          "equity": 1065706.68
+        },
+        {
+          "date": "2024-12-12",
+          "equity": 1068696.46
+        },
+        {
+          "date": "2024-12-19",
+          "equity": 1048181.66
+        },
+        {
+          "date": "2024-12-26",
+          "equity": 1048665.39
+        },
+        {
+          "date": "2025-01-03",
+          "equity": 996910.74
+        },
+        {
+          "date": "2025-01-10",
+          "equity": 997183.33
+        },
+        {
+          "date": "2025-01-17",
+          "equity": 1025986.36
+        },
+        {
+          "date": "2025-01-24",
+          "equity": 1008776.96
+        },
+        {
+          "date": "2025-02-10",
+          "equity": 1020228.05
+        },
+        {
+          "date": "2025-02-17",
+          "equity": 1021590.4
+        },
+        {
+          "date": "2025-02-24",
+          "equity": 1018841.19
+        },
+        {
+          "date": "2025-03-03",
+          "equity": 1029142.11
+        },
+        {
+          "date": "2025-03-10",
+          "equity": 1034473.53
+        },
+        {
+          "date": "2025-03-17",
+          "equity": 1044671.07
+        },
+        {
+          "date": "2025-03-24",
+          "equity": 1042234.45
+        },
+        {
+          "date": "2025-03-31",
+          "equity": 1037794.03
+        },
+        {
+          "date": "2025-04-08",
+          "equity": 996493.14
+        },
+        {
+          "date": "2025-04-15",
+          "equity": 998610.88
+        },
+        {
+          "date": "2025-04-22",
+          "equity": 995783.12
+        },
+        {
+          "date": "2025-04-29",
+          "equity": 981183.25
+        },
+        {
+          "date": "2025-05-09",
+          "equity": 990767.88
+        },
+        {
+          "date": "2025-05-16",
+          "equity": 1003549.81
+        },
+        {
+          "date": "2025-05-23",
+          "equity": 1004290.55
+        },
+        {
+          "date": "2025-05-30",
+          "equity": 998671.49
+        },
+        {
+          "date": "2025-06-09",
+          "equity": 1007747.08
+        },
+        {
+          "date": "2025-06-16",
+          "equity": 1007279.14
+        },
+        {
+          "date": "2025-06-23",
+          "equity": 991845.34
+        },
+        {
+          "date": "2025-06-30",
+          "equity": 1016302.82
+        },
+        {
+          "date": "2025-07-07",
+          "equity": 1016633.34
+        },
+        {
+          "date": "2025-07-14",
+          "equity": 1033039.87
+        },
+        {
+          "date": "2025-07-21",
+          "equity": 1048246.03
+        },
+        {
+          "date": "2025-07-28",
+          "equity": 1066722.87
+        },
+        {
+          "date": "2025-08-04",
+          "equity": 1058707.05
+        },
+        {
+          "date": "2025-08-11",
+          "equity": 1079400.17
+        },
+        {
+          "date": "2025-08-18",
+          "equity": 1092059.7
+        },
+        {
+          "date": "2025-08-25",
+          "equity": 1149381.53
+        },
+        {
+          "date": "2025-09-01",
+          "equity": 1160292.44
+        },
+        {
+          "date": "2025-09-08",
+          "equity": 1158940.52
+        },
+        {
+          "date": "2025-09-15",
+          "equity": 1182524.53
+        },
+        {
+          "date": "2025-09-22",
+          "equity": 1152592.11
+        },
+        {
+          "date": "2025-09-29",
+          "equity": 1151198.08
+        },
+        {
+          "date": "2025-10-14",
+          "equity": 1160656.57
+        },
+        {
+          "date": "2025-10-21",
+          "equity": 1173005.83
+        },
+        {
+          "date": "2025-10-28",
+          "equity": 1175383.32
+        },
+        {
+          "date": "2025-11-04",
+          "equity": 1173239.31
+        },
+        {
+          "date": "2025-11-11",
+          "equity": 1230608.37
+        },
+        {
+          "date": "2025-11-18",
+          "equity": 1211241.17
+        },
+        {
+          "date": "2025-11-25",
+          "equity": 1178183.52
+        },
+        {
+          "date": "2025-12-02",
+          "equity": 1185474.3
+        },
+        {
+          "date": "2025-12-09",
+          "equity": 1161967.7
+        },
+        {
+          "date": "2025-12-16",
+          "equity": 1147748.92
+        },
+        {
+          "date": "2025-12-23",
+          "equity": 1157704.33
+        },
+        {
+          "date": "2025-12-30",
+          "equity": 1180373.43
+        },
+        {
+          "date": "2026-01-08",
+          "equity": 1197705.42
+        },
+        {
+          "date": "2026-01-15",
+          "equity": 1211039.09
+        },
+        {
+          "date": "2026-01-22",
+          "equity": 1253492.33
+        },
+        {
+          "date": "2026-01-29",
+          "equity": 1232045.87
+        },
+        {
+          "date": "2026-02-05",
+          "equity": 1220255.55
+        },
+        {
+          "date": "2026-02-12",
+          "equity": 1208237.71
+        },
+        {
+          "date": "2026-02-27",
+          "equity": 1213586.01
+        },
+        {
+          "date": "2026-03-06",
+          "equity": 1231845.23
+        },
+        {
+          "date": "2026-03-13",
+          "equity": 1243658.56
+        },
+        {
+          "date": "2026-03-20",
+          "equity": 1226960.09
+        },
+        {
+          "date": "2026-03-27",
+          "equity": 1215693.24
+        },
+        {
+          "date": "2026-04-03",
+          "equity": 1172610.67
+        },
+        {
+          "date": "2026-04-13",
+          "equity": 1175453.46
+        },
+        {
+          "date": "2026-04-20",
+          "equity": 1197166.72
+        },
+        {
+          "date": "2026-04-27",
+          "equity": 1205464.4
+        },
+        {
+          "date": "2026-05-07",
+          "equity": 1221454.15
+        },
+        {
+          "date": "2026-05-14",
+          "equity": 1211696.06
+        },
+        {
+          "date": "2026-05-21",
+          "equity": 1177269.93
+        },
+        {
+          "date": "2026-05-28",
+          "equity": 1179977.52
+        },
+        {
+          "date": "2026-06-04",
+          "equity": 1148734.49
+        }
+      ],
+      "trades_sample": [
+        {
+          "date": "2024-08-27",
+          "code": "000963",
+          "name": "华东医药",
+          "action": "BUY",
+          "price": 29.56,
+          "shares": 5000,
+          "up_prob": 1.0,
+          "comp_score": 85,
+          "reason": "strategy_B"
+        },
+        {
+          "date": "2024-08-27",
+          "code": "002958",
+          "name": "青农商行",
+          "action": "BUY",
+          "price": 2.59,
+          "shares": 49300,
+          "up_prob": 0.0,
+          "comp_score": 85,
+          "reason": "strategy_B"
+        },
+        {
+          "date": "2024-08-27",
+          "code": "600141",
+          "name": "兴发集团",
+          "action": "BUY",
+          "price": 18.19,
+          "shares": 5900,
+          "up_prob": 0.0,
+          "comp_score": 85,
+          "reason": "strategy_B"
+        },
+        {
+          "date": "2024-08-27",
+          "code": "600707",
+          "name": "彩虹股份",
+          "action": "BUY",
+          "price": 6.31,
+          "shares": 14600,
+          "up_prob": 0.0,
+          "comp_score": 85,
+          "reason": "strategy_B"
+        },
+        {
+          "date": "2024-08-27",
+          "code": "603392",
+          "name": "万泰生物",
+          "action": "BUY",
+          "price": 70.21,
+          "shares": 1100,
+          "up_prob": 0.0,
+          "comp_score": 85,
+          "reason": "strategy_B"
+        },
+        {
+          "date": "2024-08-27",
+          "code": "000999",
+          "name": "华润三九",
+          "action": "BUY",
+          "price": 43.26,
+          "shares": 1500,
+          "up_prob": 1.0,
+          "comp_score": 80,
+          "reason": "strategy_B"
+        },
+        {
+          "date": "2024-08-27",
+          "code": "002595",
+          "name": "豪迈科技",
+          "action": "BUY",
+          "price": 37.5,
+          "shares": 1500,
+          "up_prob": 0.9999,
+          "comp_score": 80,
+          "reason": "strategy_B"
+        },
+        {
+          "date": "2024-08-27",
+          "code": "600018",
+          "name": "上港集团",
+          "action": "BUY",
+          "price": 6.25,
+          "shares": 7800,
+          "up_prob": 0.0,
+          "comp_score": 80,
+          "reason": "strategy_B"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "000963",
+          "name": "华东医药",
+          "action": "SELL",
+          "price": 28.18,
+          "entry_price": 29.56,
+          "shares": 5000,
+          "pnl_pct": -4.67,
+          "pnl_amount": -6942.27,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "002958",
+          "name": "青农商行",
+          "action": "SELL",
+          "price": 2.42,
+          "entry_price": 2.59,
+          "shares": 49300,
+          "pnl_pct": -6.56,
+          "pnl_amount": -8416.79,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "600141",
+          "name": "兴发集团",
+          "action": "SELL",
+          "price": 18.51,
+          "entry_price": 18.19,
+          "shares": 5900,
+          "pnl_pct": 1.76,
+          "pnl_amount": 1855.24,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "600707",
+          "name": "彩虹股份",
+          "action": "SELL",
+          "price": 6.29,
+          "entry_price": 6.31,
+          "shares": 14600,
+          "pnl_pct": -0.32,
+          "pnl_amount": -319.55,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "603392",
+          "name": "万泰生物",
+          "action": "SELL",
+          "price": 68.7,
+          "entry_price": 70.21,
+          "shares": 1100,
+          "pnl_pct": -2.15,
+          "pnl_amount": -1683.67,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "000999",
+          "name": "华润三九",
+          "action": "SELL",
+          "price": 40.87,
+          "entry_price": 43.26,
+          "shares": 1500,
+          "pnl_pct": -5.52,
+          "pnl_amount": -3603.39,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "002595",
+          "name": "豪迈科技",
+          "action": "SELL",
+          "price": 41.33,
+          "entry_price": 37.5,
+          "shares": 1500,
+          "pnl_pct": 10.21,
+          "pnl_amount": 5726.4,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "600018",
+          "name": "上港集团",
+          "action": "SELL",
+          "price": 5.95,
+          "entry_price": 6.25,
+          "shares": 7800,
+          "pnl_pct": -4.8,
+          "pnl_amount": -2353.92,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "000301",
+          "name": "东方盛虹",
+          "action": "BUY",
+          "price": 7.35,
+          "shares": 20000,
+          "up_prob": 0.0,
+          "comp_score": 85,
+          "reason": "strategy_B"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "000999",
+          "name": "华润三九",
+          "action": "BUY",
+          "price": 40.87,
+          "shares": 3000,
+          "up_prob": 1.0,
+          "comp_score": 85,
+          "reason": "strategy_B"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "002074",
+          "name": "国轩高科",
+          "action": "BUY",
+          "price": 18.29,
+          "shares": 5800,
+          "up_prob": 1.0,
+          "comp_score": 85,
+          "reason": "strategy_B"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "600141",
+          "name": "兴发集团",
+          "action": "BUY",
+          "price": 18.51,
+          "shares": 4900,
+          "up_prob": 0.0,
+          "comp_score": 85,
+          "reason": "strategy_B"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "600438",
+          "name": "通威股份",
+          "action": "BUY",
+          "price": 18.69,
+          "shares": 4100,
+          "up_prob": 1.0,
+          "comp_score": 85,
+          "reason": "strategy_B"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "600549",
+          "name": "厦门钨业",
+          "action": "BUY",
+          "price": 16.57,
+          "shares": 3900,
+          "up_prob": 0.0,
+          "comp_score": 85,
+          "reason": "strategy_B"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "600588",
+          "name": "用友网络",
+          "action": "BUY",
+          "price": 8.64,
+          "shares": 6500,
+          "up_prob": 0.0,
+          "comp_score": 85,
+          "reason": "strategy_B"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "600754",
+          "name": "锦江酒店",
+          "action": "BUY",
+          "price": 23.17,
+          "shares": 2000,
+          "up_prob": 0.008,
+          "comp_score": 85,
+          "reason": "strategy_B"
+        },
+        {
+          "date": "2024-09-26",
+          "code": "000301",
+          "name": "东方盛虹",
+          "action": "SELL",
+          "price": 8.23,
+          "entry_price": 7.35,
+          "shares": 20000,
+          "pnl_pct": 11.97,
+          "pnl_amount": 17550.62,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-26",
+          "code": "000999",
+          "name": "华润三九",
+          "action": "SELL",
+          "price": 40.7,
+          "entry_price": 40.87,
+          "shares": 3000,
+          "pnl_pct": -0.42,
+          "pnl_amount": -546.63,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-26",
+          "code": "002074",
+          "name": "国轩高科",
+          "action": "SELL",
+          "price": 19.49,
+          "entry_price": 18.29,
+          "shares": 5800,
+          "pnl_pct": 6.56,
+          "pnl_amount": 6926.09,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-26",
+          "code": "600141",
+          "name": "兴发集团",
+          "action": "SELL",
+          "price": 19.85,
+          "entry_price": 18.51,
+          "shares": 4900,
+          "pnl_pct": 7.24,
+          "pnl_amount": 6536.82,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-26",
+          "code": "600438",
+          "name": "通威股份",
+          "action": "SELL",
+          "price": 19.44,
+          "entry_price": 18.69,
+          "shares": 4100,
+          "pnl_pct": 4.01,
+          "pnl_amount": 3051.09,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-26",
+          "code": "600549",
+          "name": "厦门钨业",
+          "action": "SELL",
+          "price": 18.39,
+          "entry_price": 16.57,
+          "shares": 3900,
+          "pnl_pct": 10.98,
+          "pnl_amount": 7076.48,
+          "hold_days": 10,
+          "reason": "timeout"
+        }
+      ]
+    },
+    "C": {
+      "strategy": "HMM+技术信号",
+      "strategy_id": "C",
+      "initial_capital": 1000000,
+      "final_capital": 1361474.38,
+      "total_return": 0.3615,
+      "annual_return": 0.1731,
+      "max_drawdown": -0.0976,
+      "sharpe_ratio": 1.11,
+      "win_rate": 0.4624,
+      "profit_factor": 1.69,
+      "total_trades": 708,
+      "sell_trades": 346,
+      "avg_holding_days": 9.8,
+      "exit_reasons": {
+        "take_profit": 28,
+        "timeout": 302,
+        "stop_loss": 16,
+        "backtest_end": 8
+      },
+      "equity_curve": [
+        {
+          "date": "2024-06-03",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-06-11",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-06-18",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-06-25",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-07-02",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-07-09",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-07-16",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-07-23",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-07-30",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-08-06",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-08-13",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-08-20",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-08-27",
+          "equity": 1000000
+        },
+        {
+          "date": "2024-09-03",
+          "equity": 1054219.47
+        },
+        {
+          "date": "2024-09-10",
+          "equity": 1018673.6
+        },
+        {
+          "date": "2024-09-19",
+          "equity": 998811.78
+        },
+        {
+          "date": "2024-09-26",
+          "equity": 1051967.56
+        },
+        {
+          "date": "2024-10-10",
+          "equity": 1161432.74
+        },
+        {
+          "date": "2024-10-17",
+          "equity": 1130174.3
+        },
+        {
+          "date": "2024-10-24",
+          "equity": 1190992.69
+        },
+        {
+          "date": "2024-10-31",
+          "equity": 1224841.01
+        },
+        {
+          "date": "2024-11-07",
+          "equity": 1262748.6
+        },
+        {
+          "date": "2024-11-14",
+          "equity": 1243923.24
+        },
+        {
+          "date": "2024-11-21",
+          "equity": 1251234.13
+        },
+        {
+          "date": "2024-11-28",
+          "equity": 1215869.58
+        },
+        {
+          "date": "2024-12-05",
+          "equity": 1241233.18
+        },
+        {
+          "date": "2024-12-12",
+          "equity": 1249519.77
+        },
+        {
+          "date": "2024-12-19",
+          "equity": 1215537.08
+        },
+        {
+          "date": "2024-12-26",
+          "equity": 1201763.08
+        },
+        {
+          "date": "2025-01-03",
+          "equity": 1148128.22
+        },
+        {
+          "date": "2025-01-10",
+          "equity": 1195369.59
+        },
+        {
+          "date": "2025-01-17",
+          "equity": 1232489.17
+        },
+        {
+          "date": "2025-01-24",
+          "equity": 1250287.5
+        },
+        {
+          "date": "2025-02-10",
+          "equity": 1300593.46
+        },
+        {
+          "date": "2025-02-17",
+          "equity": 1315302.81
+        },
+        {
+          "date": "2025-02-24",
+          "equity": 1307990.42
+        },
+        {
+          "date": "2025-03-03",
+          "equity": 1302620.84
+        },
+        {
+          "date": "2025-03-10",
+          "equity": 1305882.47
+        },
+        {
+          "date": "2025-03-17",
+          "equity": 1316539.41
+        },
+        {
+          "date": "2025-03-24",
+          "equity": 1280760.23
+        },
+        {
+          "date": "2025-03-31",
+          "equity": 1274935.96
+        },
+        {
+          "date": "2025-04-08",
+          "equity": 1243312.99
+        },
+        {
+          "date": "2025-04-15",
+          "equity": 1249251.69
+        },
+        {
+          "date": "2025-04-22",
+          "equity": 1252511.85
+        },
+        {
+          "date": "2025-04-29",
+          "equity": 1227382.72
+        },
+        {
+          "date": "2025-05-09",
+          "equity": 1249010.78
+        },
+        {
+          "date": "2025-05-16",
+          "equity": 1263891.17
+        },
+        {
+          "date": "2025-05-23",
+          "equity": 1260288.34
+        },
+        {
+          "date": "2025-05-30",
+          "equity": 1247724.83
+        },
+        {
+          "date": "2025-06-09",
+          "equity": 1262915.68
+        },
+        {
+          "date": "2025-06-16",
+          "equity": 1254223.44
+        },
+        {
+          "date": "2025-06-23",
+          "equity": 1234108.95
+        },
+        {
+          "date": "2025-06-30",
+          "equity": 1289793.75
+        },
+        {
+          "date": "2025-07-07",
+          "equity": 1270540.19
+        },
+        {
+          "date": "2025-07-14",
+          "equity": 1303895.44
+        },
+        {
+          "date": "2025-07-21",
+          "equity": 1334947.98
+        },
+        {
+          "date": "2025-07-28",
+          "equity": 1345619.1
+        },
+        {
+          "date": "2025-08-04",
+          "equity": 1321359.63
+        },
+        {
+          "date": "2025-08-11",
+          "equity": 1347871.53
+        },
+        {
+          "date": "2025-08-18",
+          "equity": 1349308.83
+        },
+        {
+          "date": "2025-08-25",
+          "equity": 1386991.26
+        },
+        {
+          "date": "2025-09-01",
+          "equity": 1377041.0
+        },
+        {
+          "date": "2025-09-08",
+          "equity": 1385373.31
+        },
+        {
+          "date": "2025-09-15",
+          "equity": 1406984.38
+        },
+        {
+          "date": "2025-09-22",
+          "equity": 1378147.3
+        },
+        {
+          "date": "2025-09-29",
+          "equity": 1370015.52
+        },
+        {
+          "date": "2025-10-14",
+          "equity": 1337487.32
+        },
+        {
+          "date": "2025-10-21",
+          "equity": 1332134.0
+        },
+        {
+          "date": "2025-10-28",
+          "equity": 1345069.45
+        },
+        {
+          "date": "2025-11-04",
+          "equity": 1340096.32
+        },
+        {
+          "date": "2025-11-11",
+          "equity": 1366478.7
+        },
+        {
+          "date": "2025-11-18",
+          "equity": 1347736.99
+        },
+        {
+          "date": "2025-11-25",
+          "equity": 1322851.73
+        },
+        {
+          "date": "2025-12-02",
+          "equity": 1317810.93
+        },
+        {
+          "date": "2025-12-09",
+          "equity": 1312669.93
+        },
+        {
+          "date": "2025-12-16",
+          "equity": 1279685.1
+        },
+        {
+          "date": "2025-12-23",
+          "equity": 1305292.16
+        },
+        {
+          "date": "2025-12-30",
+          "equity": 1356162.69
+        },
+        {
+          "date": "2026-01-08",
+          "equity": 1384289.58
+        },
+        {
+          "date": "2026-01-15",
+          "equity": 1394437.77
+        },
+        {
+          "date": "2026-01-22",
+          "equity": 1453667.61
+        },
+        {
+          "date": "2026-01-29",
+          "equity": 1406880.91
+        },
+        {
+          "date": "2026-02-05",
+          "equity": 1396578.25
+        },
+        {
+          "date": "2026-02-12",
+          "equity": 1423843.33
+        },
+        {
+          "date": "2026-02-27",
+          "equity": 1456842.75
+        },
+        {
+          "date": "2026-03-06",
+          "equity": 1483909.36
+        },
+        {
+          "date": "2026-03-13",
+          "equity": 1479779.57
+        },
+        {
+          "date": "2026-03-20",
+          "equity": 1437068.45
+        },
+        {
+          "date": "2026-03-27",
+          "equity": 1419551.63
+        },
+        {
+          "date": "2026-04-03",
+          "equity": 1379663.44
+        },
+        {
+          "date": "2026-04-13",
+          "equity": 1384128.92
+        },
+        {
+          "date": "2026-04-20",
+          "equity": 1398971.4
+        },
+        {
+          "date": "2026-04-27",
+          "equity": 1417096.26
+        },
+        {
+          "date": "2026-05-07",
+          "equity": 1446444.98
+        },
+        {
+          "date": "2026-05-14",
+          "equity": 1410925.54
+        },
+        {
+          "date": "2026-05-21",
+          "equity": 1396540.53
+        },
+        {
+          "date": "2026-05-28",
+          "equity": 1399495.5
+        },
+        {
+          "date": "2026-06-04",
+          "equity": 1360642.13
+        }
+      ],
+      "trades_sample": [
+        {
+          "date": "2024-08-27",
+          "code": "000963",
+          "name": "华东医药",
+          "action": "BUY",
+          "price": 29.56,
+          "shares": 5000,
+          "up_prob": 1.0,
+          "comp_score": 85,
+          "reason": "strategy_C"
+        },
+        {
+          "date": "2024-08-27",
+          "code": "000999",
+          "name": "华润三九",
+          "action": "BUY",
+          "price": 43.26,
+          "shares": 2900,
+          "up_prob": 1.0,
+          "comp_score": 80,
+          "reason": "strategy_C"
+        },
+        {
+          "date": "2024-08-27",
+          "code": "002595",
+          "name": "豪迈科技",
+          "action": "BUY",
+          "price": 37.5,
+          "shares": 2900,
+          "up_prob": 0.9999,
+          "comp_score": 80,
+          "reason": "strategy_C"
+        },
+        {
+          "date": "2024-08-27",
+          "code": "601225",
+          "name": "陕西煤业",
+          "action": "BUY",
+          "price": 24.02,
+          "shares": 3800,
+          "up_prob": 1.0,
+          "comp_score": 80,
+          "reason": "strategy_C"
+        },
+        {
+          "date": "2024-08-27",
+          "code": "600989",
+          "name": "宝丰能源",
+          "action": "BUY",
+          "price": 15.31,
+          "shares": 5100,
+          "up_prob": 1.0,
+          "comp_score": 75,
+          "reason": "strategy_C"
+        },
+        {
+          "date": "2024-08-27",
+          "code": "000062",
+          "name": "深圳华强",
+          "action": "BUY",
+          "price": 20.54,
+          "shares": 3200,
+          "up_prob": 1.0,
+          "comp_score": 65,
+          "reason": "strategy_C"
+        },
+        {
+          "date": "2024-08-27",
+          "code": "600188",
+          "name": "兖矿能源",
+          "action": "BUY",
+          "price": 14.08,
+          "shares": 4000,
+          "up_prob": 1.0,
+          "comp_score": 60,
+          "reason": "strategy_C"
+        },
+        {
+          "date": "2024-08-27",
+          "code": "600958",
+          "name": "东方证券",
+          "action": "BUY",
+          "price": 8.34,
+          "shares": 5800,
+          "up_prob": 1.0,
+          "comp_score": 60,
+          "reason": "strategy_C"
+        },
+        {
+          "date": "2024-09-03",
+          "code": "000062",
+          "name": "深圳华强",
+          "action": "SELL",
+          "price": 31.22,
+          "entry_price": 20.54,
+          "shares": 3200,
+          "pnl_pct": 52.0,
+          "pnl_amount": 34146.03,
+          "hold_days": 5,
+          "reason": "take_profit"
+        },
+        {
+          "date": "2024-09-03",
+          "code": "002126",
+          "name": "银轮股份",
+          "action": "BUY",
+          "price": 16.09,
+          "shares": 3500,
+          "up_prob": 1.0,
+          "comp_score": 85,
+          "reason": "strategy_C"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "000963",
+          "name": "华东医药",
+          "action": "SELL",
+          "price": 28.18,
+          "entry_price": 29.56,
+          "shares": 5000,
+          "pnl_pct": -4.67,
+          "pnl_amount": -6942.27,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "000999",
+          "name": "华润三九",
+          "action": "SELL",
+          "price": 40.87,
+          "entry_price": 43.26,
+          "shares": 2900,
+          "pnl_pct": -5.52,
+          "pnl_amount": -6966.56,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "002595",
+          "name": "豪迈科技",
+          "action": "SELL",
+          "price": 41.33,
+          "entry_price": 37.5,
+          "shares": 2900,
+          "pnl_pct": 10.21,
+          "pnl_amount": 11071.04,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "601225",
+          "name": "陕西煤业",
+          "action": "SELL",
+          "price": 22.64,
+          "entry_price": 24.02,
+          "shares": 3800,
+          "pnl_pct": -5.75,
+          "pnl_amount": -5269.81,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "600989",
+          "name": "宝丰能源",
+          "action": "SELL",
+          "price": 14.32,
+          "entry_price": 15.31,
+          "shares": 5100,
+          "pnl_pct": -6.47,
+          "pnl_amount": -5070.91,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "600188",
+          "name": "兖矿能源",
+          "action": "SELL",
+          "price": 12.98,
+          "entry_price": 14.08,
+          "shares": 4000,
+          "pnl_pct": -7.81,
+          "pnl_amount": -4415.58,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "600958",
+          "name": "东方证券",
+          "action": "SELL",
+          "price": 8.45,
+          "entry_price": 8.34,
+          "shares": 5800,
+          "pnl_pct": 1.32,
+          "pnl_amount": 623.3,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "000999",
+          "name": "华润三九",
+          "action": "BUY",
+          "price": 40.87,
+          "shares": 3500,
+          "up_prob": 1.0,
+          "comp_score": 85,
+          "reason": "strategy_C"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "002074",
+          "name": "国轩高科",
+          "action": "BUY",
+          "price": 18.29,
+          "shares": 6700,
+          "up_prob": 1.0,
+          "comp_score": 85,
+          "reason": "strategy_C"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "600438",
+          "name": "通威股份",
+          "action": "BUY",
+          "price": 18.69,
+          "shares": 5500,
+          "up_prob": 1.0,
+          "comp_score": 85,
+          "reason": "strategy_C"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "000792",
+          "name": "盐湖股份",
+          "action": "BUY",
+          "price": 14.81,
+          "shares": 5900,
+          "up_prob": 1.0,
+          "comp_score": 80,
+          "reason": "strategy_C"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "002517",
+          "name": "恺英网络",
+          "action": "BUY",
+          "price": 9.6,
+          "shares": 7800,
+          "up_prob": 1.0,
+          "comp_score": 80,
+          "reason": "strategy_C"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "603728",
+          "name": "鸣志电器",
+          "action": "BUY",
+          "price": 36.05,
+          "shares": 1700,
+          "up_prob": 1.0,
+          "comp_score": 80,
+          "reason": "strategy_C"
+        },
+        {
+          "date": "2024-09-10",
+          "code": "002085",
+          "name": "万丰奥威",
+          "action": "BUY",
+          "price": 13.38,
+          "shares": 4100,
+          "up_prob": 1.0,
+          "comp_score": 75,
+          "reason": "strategy_C"
+        },
+        {
+          "date": "2024-09-19",
+          "code": "002126",
+          "name": "银轮股份",
+          "action": "SELL",
+          "price": 16.63,
+          "entry_price": 16.09,
+          "shares": 3500,
+          "pnl_pct": 3.36,
+          "pnl_amount": 1872.54,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-19",
+          "code": "002850",
+          "name": "科达利",
+          "action": "BUY",
+          "price": 75.06,
+          "shares": 700,
+          "up_prob": 1.0,
+          "comp_score": 85,
+          "reason": "strategy_C"
+        },
+        {
+          "date": "2024-09-26",
+          "code": "000999",
+          "name": "华润三九",
+          "action": "SELL",
+          "price": 40.7,
+          "entry_price": 40.87,
+          "shares": 3500,
+          "pnl_pct": -0.42,
+          "pnl_amount": -637.74,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-26",
+          "code": "002074",
+          "name": "国轩高科",
+          "action": "SELL",
+          "price": 19.49,
+          "entry_price": 18.29,
+          "shares": 6700,
+          "pnl_pct": 6.56,
+          "pnl_amount": 8000.83,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-26",
+          "code": "600438",
+          "name": "通威股份",
+          "action": "SELL",
+          "price": 19.44,
+          "entry_price": 18.69,
+          "shares": 5500,
+          "pnl_pct": 4.01,
+          "pnl_amount": 4092.92,
+          "hold_days": 10,
+          "reason": "timeout"
+        },
+        {
+          "date": "2024-09-26",
+          "code": "000792",
+          "name": "盐湖股份",
+          "action": "SELL",
+          "price": 15.99,
+          "entry_price": 14.81,
+          "shares": 5900,
+          "pnl_pct": 7.97,
+          "pnl_amount": 6933.7,
+          "hold_days": 10,
+          "reason": "timeout"
+        }
+      ]
+    },
+    "D": {
+      "strategy": "HMM+技术信号+辩论",
+      "strategy_id": "D",
+      "total_return": 0.2828,
+      "annual_return": 0.1133,
+      "max_drawdown": -0.1,
+      "sharpe_ratio": 0.83,
+      "win_rate": 0.485,
+      "profit_factor": 1.5,
+      "total_trades": 866,
+      "sell_trades": 433,
+      "exit_reasons": {}
+    }
+  },
+  "comparison": [
+    {
+      "strategy": "仅HMM",
+      "strategy_id": "A",
+      "total_return": 0.3287,
+      "annual_return": 0.1584,
+      "max_drawdown": -0.1042,
+      "sharpe_ratio": 1.07,
+      "win_rate": 0.5072,
+      "profit_factor": 1.46,
+      "total_trades": 714
+    },
+    {
+      "strategy": "仅技术信号",
+      "strategy_id": "B",
+      "total_return": 0.1468,
+      "annual_return": 0.0734,
+      "max_drawdown": -0.1667,
+      "sharpe_ratio": 0.56,
+      "win_rate": 0.4812,
+      "profit_factor": 1.38,
+      "total_trades": 706
+    },
+    {
+      "strategy": "HMM+技术信号",
+      "strategy_id": "C",
+      "total_return": 0.3615,
+      "annual_return": 0.1731,
+      "max_drawdown": -0.0976,
+      "sharpe_ratio": 1.11,
+      "win_rate": 0.4624,
+      "profit_factor": 1.69,
+      "total_trades": 708
+    },
+    {
+      "strategy": "HMM+技术信号+辩论",
+      "strategy_id": "D",
+      "total_return": 0.2828,
+      "annual_return": 0.1133,
+      "max_drawdown": -0.1,
+      "sharpe_ratio": 0.83,
+      "win_rate": 0.485,
+      "profit_factor": 1.5,
+      "total_trades": 866
+    }
+  ]
+}

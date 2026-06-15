@@ -1,0 +1,77 @@
+{
+  "time": "2026-06-07T00:03:48.620302",
+  "engine": "真实HMM+真实技术因子参数优化",
+  "data_source": "BaoStock真实数据",
+  "date_range": "2023-06-01 ~ 2024-12-31",
+  "stock_count": 20,
+  "hmm_trained": 20,
+  "total_combinations": 108,
+  "top5": [
+    {
+      "stop_loss_pct": 0.05,
+      "take_profit_pct": 0.15,
+      "max_holding_days": 20,
+      "max_positions": 3,
+      "position_size": 0.2,
+      "total_return": 0.154888,
+      "sharpe_ratio": 1.1188,
+      "max_drawdown": 0.059429,
+      "win_rate": 0.4821,
+      "profit_factor": 1.7709,
+      "total_trades": 56
+    },
+    {
+      "stop_loss_pct": 0.05,
+      "take_profit_pct": 0.1,
+      "max_holding_days": 20,
+      "max_positions": 3,
+      "position_size": 0.15,
+      "total_return": 0.124,
+      "sharpe_ratio": 1.0909,
+      "max_drawdown": 0.048262,
+      "win_rate": 0.541,
+      "profit_factor": 1.6755,
+      "total_trades": 61
+    },
+    {
+      "stop_loss_pct": 0.05,
+      "take_profit_pct": 0.2,
+      "max_holding_days": 10,
+      "max_positions": 5,
+      "position_size": 0.15,
+      "total_return": 0.156162,
+      "sharpe_ratio": 1.0216,
+      "max_drawdown": 0.059072,
+      "win_rate": 0.4844,
+      "profit_factor": 1.5256,
+      "total_trades": 128
+    },
+    {
+      "stop_loss_pct": 0.05,
+      "take_profit_pct": 0.2,
+      "max_holding_days": 10,
+      "max_positions": 3,
+      "position_size": 0.15,
+      "total_return": 0.114148,
+      "sharpe_ratio": 1.0098,
+      "max_drawdown": 0.046591,
+      "win_rate": 0.5244,
+      "profit_factor": 1.5813,
+      "total_trades": 82
+    },
+    {
+      "stop_loss_pct": 0.1,
+      "take_profit_pct": 0.15,
+      "max_holding_days": 10,
+      "max_positions": 3,
+      "position_size": 0.2,
+      "total_return": 0.138852,
+      "sharpe_ratio": 1.002,
+      "max_drawdown": 0.075769,
+      "win_rate": 0.5513,
+      "profit_factor": 1.6444,
+      "total_trades": 78
+    }
+  ],
+  "all_results_count": 108
+}

@@ -1,0 +1,3962 @@
+{
+  "params": {
+    "stop_loss_pct": 0.1,
+    "take_profit_pct": 0.15,
+    "max_holding_days": 10,
+    "buy_threshold": 0.6,
+    "sell_threshold": 0.5,
+    "max_positions": 8,
+    "position_size": 0.15
+  },
+  "total_return": 0.9539486899999999,
+  "annual_return": 0.5254249626603558,
+  "sharpe_ratio": 3.831519251158177,
+  "max_drawdown": 0.04799687115775486,
+  "win_rate": 0.6301369863013698,
+  "profit_factor": 3.2023444714974185,
+  "total_trades": 146,
+  "avg_holding_days": 0.0,
+  "avg_win_pct": 0.1038,
+  "avg_loss_pct": -0.0536,
+  "exit_reasons": {
+    "signal_reverse": 70,
+    "take_profit": 52,
+    "stop_loss": 17,
+    "backtest_end": 7
+  },
+  "final_capital": 1953948.69,
+  "equity_curve": [
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1000000.0,
+      "cash": 1000000.0,
+      "positions_value": 0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1001797.79,
+      "cash": 105037.79,
+      "positions_value": 896760.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 995126.02,
+      "cash": 102996.02,
+      "positions_value": 892130.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 990430.02,
+      "cash": 102996.02,
+      "positions_value": 887434.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 987989.02,
+      "cash": 102996.02,
+      "positions_value": 884993.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 994043.02,
+      "cash": 102996.02,
+      "positions_value": 891047.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 997122.02,
+      "cash": 102996.02,
+      "positions_value": 894126.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 993259.02,
+      "cash": 102996.02,
+      "positions_value": 890263.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 987802.02,
+      "cash": 102996.02,
+      "positions_value": 884806.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 988184.02,
+      "cash": 102996.02,
+      "positions_value": 885188.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 991252.02,
+      "cash": 102996.02,
+      "positions_value": 888256.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1005269.02,
+      "cash": 102996.02,
+      "positions_value": 902273.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1002151.02,
+      "cash": 102996.02,
+      "positions_value": 899155.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1004092.02,
+      "cash": 102996.02,
+      "positions_value": 901096.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1015929.02,
+      "cash": 102996.02,
+      "positions_value": 912933.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1021918.02,
+      "cash": 102996.02,
+      "positions_value": 918922.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1023125.02,
+      "cash": 102996.02,
+      "positions_value": 920129.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1030227.02,
+      "cash": 102996.02,
+      "positions_value": 927231.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1032710.02,
+      "cash": 102996.02,
+      "positions_value": 929714.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1025753.02,
+      "cash": 102996.02,
+      "positions_value": 922757.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1028871.02,
+      "cash": 102996.02,
+      "positions_value": 925875.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1038159.02,
+      "cash": 102996.02,
+      "positions_value": 935163.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1039959.02,
+      "cash": 102996.02,
+      "positions_value": 936963.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1030686.02,
+      "cash": 102996.02,
+      "positions_value": 927690.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1035723.02,
+      "cash": 102996.02,
+      "positions_value": 932727.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1032727.02,
+      "cash": 102996.02,
+      "positions_value": 929731.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1025346.02,
+      "cash": 102996.02,
+      "positions_value": 922350.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1033690.02,
+      "cash": 102996.02,
+      "positions_value": 930694.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1045163.02,
+      "cash": 102996.02,
+      "positions_value": 942167.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1054370.02,
+      "cash": 102996.02,
+      "positions_value": 951374.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1055950.02,
+      "cash": 102996.02,
+      "positions_value": 952954.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1058790.02,
+      "cash": 102996.02,
+      "positions_value": 955794.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1056344.02,
+      "cash": 102996.02,
+      "positions_value": 953348.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1042110.05,
+      "cash": 104643.05,
+      "positions_value": 937467.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1035267.05,
+      "cash": 104643.05,
+      "positions_value": 930624.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1030156.05,
+      "cash": 104643.05,
+      "positions_value": 925513.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1026145.05,
+      "cash": 104643.05,
+      "positions_value": 921502.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1013429.05,
+      "cash": 104643.05,
+      "positions_value": 908786.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1026137.05,
+      "cash": 104643.05,
+      "positions_value": 921494.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1035337.05,
+      "cash": 104643.05,
+      "positions_value": 930694.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1033359.45,
+      "cash": 132784.45,
+      "positions_value": 900575.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1042529.45,
+      "cash": 132784.45,
+      "positions_value": 909745.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1043188.45,
+      "cash": 132784.45,
+      "positions_value": 910404.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1048107.45,
+      "cash": 132784.45,
+      "positions_value": 915323.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1043637.45,
+      "cash": 132784.45,
+      "positions_value": 910853.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1035964.45,
+      "cash": 132784.45,
+      "positions_value": 903180.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1043676.45,
+      "cash": 132784.45,
+      "positions_value": 910892.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1045930.45,
+      "cash": 132784.45,
+      "positions_value": 913146.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1057803.45,
+      "cash": 132784.45,
+      "positions_value": 925019.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1061494.45,
+      "cash": 132784.45,
+      "positions_value": 928710.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1057339.45,
+      "cash": 132784.45,
+      "positions_value": 924555.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1060133.45,
+      "cash": 132784.45,
+      "positions_value": 927349.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1061089.45,
+      "cash": 132784.45,
+      "positions_value": 928305.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1065515.45,
+      "cash": 132784.45,
+      "positions_value": 932731.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1065163.45,
+      "cash": 132784.45,
+      "positions_value": 932379.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1070206.45,
+      "cash": 132784.45,
+      "positions_value": 937422.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1070847.45,
+      "cash": 132784.45,
+      "positions_value": 938063.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1072844.45,
+      "cash": 132784.45,
+      "positions_value": 940060.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1072732.45,
+      "cash": 132784.45,
+      "positions_value": 939948.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1076182.45,
+      "cash": 132784.45,
+      "positions_value": 943398.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1073214.45,
+      "cash": 132784.45,
+      "positions_value": 940430.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1079808.45,
+      "cash": 132784.45,
+      "positions_value": 947024.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1084847.9,
+      "cash": 146711.9,
+      "positions_value": 938136.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1092913.9,
+      "cash": 146711.9,
+      "positions_value": 946202.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1095677.67,
+      "cash": 221.67,
+      "positions_value": 1095456.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1104009.67,
+      "cash": 221.67,
+      "positions_value": 1103788.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1093466.67,
+      "cash": 221.67,
+      "positions_value": 1093245.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1088922.67,
+      "cash": 221.67,
+      "positions_value": 1088701.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1094850.67,
+      "cash": 221.67,
+      "positions_value": 1094629.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1091716.67,
+      "cash": 221.67,
+      "positions_value": 1091495.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1098772.67,
+      "cash": 221.67,
+      "positions_value": 1098551.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1109264.67,
+      "cash": 221.67,
+      "positions_value": 1109043.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1103351.67,
+      "cash": 221.67,
+      "positions_value": 1103130.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1100312.67,
+      "cash": 221.67,
+      "positions_value": 1100091.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1090366.59,
+      "cash": 149559.59,
+      "positions_value": 940807.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1098556.8,
+      "cash": 325.8,
+      "positions_value": 1098231.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1104734.8,
+      "cash": 325.8,
+      "positions_value": 1104409.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1105289.8,
+      "cash": 325.8,
+      "positions_value": 1104964.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1100240.8,
+      "cash": 325.8,
+      "positions_value": 1099915.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1104126.8,
+      "cash": 325.8,
+      "positions_value": 1103801.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1113387.44,
+      "cash": 22209.44,
+      "positions_value": 1091178.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1108472.44,
+      "cash": 22209.44,
+      "positions_value": 1086263.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1119839.44,
+      "cash": 22209.44,
+      "positions_value": 1097630.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1106732.55,
+      "cash": 18476.55,
+      "positions_value": 1088256.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1124014.55,
+      "cash": 18476.55,
+      "positions_value": 1105538.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1135197.52,
+      "cash": 40228.52,
+      "positions_value": 1094969.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1144341.04,
+      "cash": 60893.04,
+      "positions_value": 1083448.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1148737.04,
+      "cash": 60893.04,
+      "positions_value": 1087844.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1143048.04,
+      "cash": 60893.04,
+      "positions_value": 1082155.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1134884.04,
+      "cash": 60893.04,
+      "positions_value": 1073991.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1135609.69,
+      "cash": 49825.69,
+      "positions_value": 1085784.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1129279.69,
+      "cash": 49825.69,
+      "positions_value": 1079454.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1119860.69,
+      "cash": 49825.69,
+      "positions_value": 1070035.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1128927.69,
+      "cash": 49825.69,
+      "positions_value": 1079102.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1136269.69,
+      "cash": 49825.69,
+      "positions_value": 1086444.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1144559.69,
+      "cash": 49825.69,
+      "positions_value": 1094734.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1136939.69,
+      "cash": 49825.69,
+      "positions_value": 1087114.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1133000.69,
+      "cash": 49825.69,
+      "positions_value": 1083175.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1129120.69,
+      "cash": 49825.69,
+      "positions_value": 1079295.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1122876.69,
+      "cash": 49825.69,
+      "positions_value": 1073051.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1123301.69,
+      "cash": 49825.69,
+      "positions_value": 1073476.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1146492.69,
+      "cash": 49825.69,
+      "positions_value": 1096667.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1155596.69,
+      "cash": 49825.69,
+      "positions_value": 1105771.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1175946.69,
+      "cash": 49825.69,
+      "positions_value": 1126121.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1189866.69,
+      "cash": 49825.69,
+      "positions_value": 1140041.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1178934.69,
+      "cash": 49825.69,
+      "positions_value": 1129109.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1183092.69,
+      "cash": 49825.69,
+      "positions_value": 1133267.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1179759.69,
+      "cash": 49825.69,
+      "positions_value": 1129934.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1190616.69,
+      "cash": 49825.69,
+      "positions_value": 1140791.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1202285.63,
+      "cash": 71692.63,
+      "positions_value": 1130593.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1217088.11,
+      "cash": 118527.11,
+      "positions_value": 1098561.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1215268.11,
+      "cash": 118527.11,
+      "positions_value": 1096741.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1214903.11,
+      "cash": 118527.11,
+      "positions_value": 1096376.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1225219.11,
+      "cash": 118527.11,
+      "positions_value": 1106692.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1244300.11,
+      "cash": 118527.11,
+      "positions_value": 1125773.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1246105.32,
+      "cash": 141078.32,
+      "positions_value": 1105027.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1253509.32,
+      "cash": 141078.32,
+      "positions_value": 1112431.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1255799.32,
+      "cash": 141078.32,
+      "positions_value": 1114721.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1244076.32,
+      "cash": 141078.32,
+      "positions_value": 1102998.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1249239.32,
+      "cash": 141078.32,
+      "positions_value": 1108161.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1239691.31,
+      "cash": 3071.31,
+      "positions_value": 1236620.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1258038.31,
+      "cash": 3071.31,
+      "positions_value": 1254967.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1263710.31,
+      "cash": 3071.31,
+      "positions_value": 1260639.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1272842.07,
+      "cash": 31728.07,
+      "positions_value": 1241114.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1292530.07,
+      "cash": 31728.07,
+      "positions_value": 1260802.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1296946.07,
+      "cash": 31728.07,
+      "positions_value": 1265218.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1291216.07,
+      "cash": 31728.07,
+      "positions_value": 1259488.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1296585.07,
+      "cash": 31728.07,
+      "positions_value": 1264857.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1315469.28,
+      "cash": 73957.28,
+      "positions_value": 1241512.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1309453.68,
+      "cash": 95814.68,
+      "positions_value": 1213639.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1301786.68,
+      "cash": 95814.68,
+      "positions_value": 1205972.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1292755.68,
+      "cash": 95814.68,
+      "positions_value": 1196941.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1301919.24,
+      "cash": 100935.24,
+      "positions_value": 1200984.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1315727.25,
+      "cash": 102650.25,
+      "positions_value": 1213077.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1307075.25,
+      "cash": 102650.25,
+      "positions_value": 1204425.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1317721.25,
+      "cash": 102650.25,
+      "positions_value": 1215071.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1311638.15,
+      "cash": 104485.15,
+      "positions_value": 1207153.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1307074.21,
+      "cash": 106342.21,
+      "positions_value": 1200732.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1284621.29,
+      "cash": 99723.29,
+      "positions_value": 1184898.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1294809.02,
+      "cash": 80244.02,
+      "positions_value": 1214565.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1284942.6,
+      "cash": 61204.6,
+      "positions_value": 1223738.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1308611.6,
+      "cash": 61204.6,
+      "positions_value": 1247407.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1313380.44,
+      "cash": 81329.44,
+      "positions_value": 1232051.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1307583.31,
+      "cash": 88417.31,
+      "positions_value": 1219166.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1304380.34,
+      "cash": 66863.34,
+      "positions_value": 1237517.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1310220.34,
+      "cash": 66863.34,
+      "positions_value": 1243357.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1328625.24,
+      "cash": 90482.24,
+      "positions_value": 1238143.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1318130.24,
+      "cash": 90482.24,
+      "positions_value": 1227648.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1323444.24,
+      "cash": 90482.24,
+      "positions_value": 1232962.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1330176.24,
+      "cash": 90482.24,
+      "positions_value": 1239694.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1329702.24,
+      "cash": 90482.24,
+      "positions_value": 1239220.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1349657.24,
+      "cash": 90482.24,
+      "positions_value": 1259175.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1345626.24,
+      "cash": 90482.24,
+      "positions_value": 1255144.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1360823.24,
+      "cash": 90482.24,
+      "positions_value": 1270341.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1365487.24,
+      "cash": 90482.24,
+      "positions_value": 1275005.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1366652.24,
+      "cash": 90482.24,
+      "positions_value": 1276170.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1363791.04,
+      "cash": 104094.04,
+      "positions_value": 1259697.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1354332.04,
+      "cash": 104094.04,
+      "positions_value": 1250238.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1361832.04,
+      "cash": 104094.04,
+      "positions_value": 1257738.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1365100.04,
+      "cash": 104094.04,
+      "positions_value": 1261006.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1368361.56,
+      "cash": 118237.56,
+      "positions_value": 1250124.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1376106.56,
+      "cash": 118237.56,
+      "positions_value": 1257869.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1393679.56,
+      "cash": 118237.56,
+      "positions_value": 1275442.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1407436.74,
+      "cash": 140269.74,
+      "positions_value": 1267167.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1410151.74,
+      "cash": 140269.74,
+      "positions_value": 1269882.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1402670.74,
+      "cash": 140269.74,
+      "positions_value": 1262401.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1405896.81,
+      "cash": 162218.81,
+      "positions_value": 1243678.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1409596.77,
+      "cash": 179114.77,
+      "positions_value": 1230482.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1437966.3,
+      "cash": 217546.3,
+      "positions_value": 1220420.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1442159.3,
+      "cash": 217546.3,
+      "positions_value": 1224613.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1433669.3,
+      "cash": 217546.3,
+      "positions_value": 1216123.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1436841.3,
+      "cash": 217546.3,
+      "positions_value": 1219295.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1436133.3,
+      "cash": 217546.3,
+      "positions_value": 1218587.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1427689.82,
+      "cash": 207053.82,
+      "positions_value": 1220636.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1439045.85,
+      "cash": 197578.85,
+      "positions_value": 1241467.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1443346.85,
+      "cash": 197578.85,
+      "positions_value": 1245768.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1439544.85,
+      "cash": 197578.85,
+      "positions_value": 1241966.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1438955.21,
+      "cash": 200223.21,
+      "positions_value": 1238732.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1455953.21,
+      "cash": 200223.21,
+      "positions_value": 1255730.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1464572.59,
+      "cash": 198249.59,
+      "positions_value": 1266323.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1462621.59,
+      "cash": 198249.59,
+      "positions_value": 1264372.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1455062.59,
+      "cash": 198249.59,
+      "positions_value": 1256813.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1450832.59,
+      "cash": 198249.59,
+      "positions_value": 1252583.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1463217.86,
+      "cash": 228139.86,
+      "positions_value": 1235078.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1471969.82,
+      "cash": 239731.82,
+      "positions_value": 1232238.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1473022.82,
+      "cash": 239731.82,
+      "positions_value": 1233291.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1485714.82,
+      "cash": 239731.82,
+      "positions_value": 1245983.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1484996.72,
+      "cash": 255474.72,
+      "positions_value": 1229522.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1485532.72,
+      "cash": 255474.72,
+      "positions_value": 1230058.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1504507.72,
+      "cash": 255474.72,
+      "positions_value": 1249033.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1526445.72,
+      "cash": 255474.72,
+      "positions_value": 1270971.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1528939.78,
+      "cash": 298412.78,
+      "positions_value": 1230527.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1540911.78,
+      "cash": 298412.78,
+      "positions_value": 1242499.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1540508.78,
+      "cash": 298412.78,
+      "positions_value": 1242096.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1535817.78,
+      "cash": 298412.78,
+      "positions_value": 1237405.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1532968.66,
+      "cash": 299025.66,
+      "positions_value": 1233943.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1532383.76,
+      "cash": 299559.76,
+      "positions_value": 1232824.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1533898.76,
+      "cash": 299559.76,
+      "positions_value": 1234339.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1530399.77,
+      "cash": 282353.77,
+      "positions_value": 1248046.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1536305.77,
+      "cash": 282353.77,
+      "positions_value": 1253952.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1531708.77,
+      "cash": 282353.77,
+      "positions_value": 1249355.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1558404.08,
+      "cash": 301133.08,
+      "positions_value": 1257271.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1584038.33,
+      "cash": 324353.33,
+      "positions_value": 1259685.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1582750.41,
+      "cash": 337931.41,
+      "positions_value": 1244819.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1577953.41,
+      "cash": 337931.41,
+      "positions_value": 1240022.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1581691.5,
+      "cash": 360390.5,
+      "positions_value": 1221301.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1567358.8,
+      "cash": 345142.8,
+      "positions_value": 1222216.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1576930.8,
+      "cash": 345142.8,
+      "positions_value": 1231788.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1594404.8,
+      "cash": 345142.8,
+      "positions_value": 1249262.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1584180.8,
+      "cash": 345142.8,
+      "positions_value": 1239038.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1595637.24,
+      "cash": 346066.24,
+      "positions_value": 1249571.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1582787.15,
+      "cash": 354112.15,
+      "positions_value": 1228675.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1599779.82,
+      "cash": 374975.82,
+      "positions_value": 1224804.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1604550.82,
+      "cash": 374975.82,
+      "positions_value": 1229575.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1577854.94,
+      "cash": 372806.94,
+      "positions_value": 1205048.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1590112.99,
+      "cash": 370703.99,
+      "positions_value": 1219409.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1589201.99,
+      "cash": 370703.99,
+      "positions_value": 1218498.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1588733.99,
+      "cash": 370703.99,
+      "positions_value": 1218030.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1588065.81,
+      "cash": 368810.81,
+      "positions_value": 1219255.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1600806.81,
+      "cash": 368810.81,
+      "positions_value": 1231996.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1595403.63,
+      "cash": 370355.63,
+      "positions_value": 1225048.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1575980.45,
+      "cash": 366678.45,
+      "positions_value": 1209302.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1585629.45,
+      "cash": 366678.45,
+      "positions_value": 1218951.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1576306.39,
+      "cash": 668433.39,
+      "positions_value": 907873.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1585147.29,
+      "cash": 392032.29,
+      "positions_value": 1193115.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1584818.29,
+      "cash": 392032.29,
+      "positions_value": 1192786.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1585319.29,
+      "cash": 392032.29,
+      "positions_value": 1193287.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1582960.39,
+      "cash": 512475.39,
+      "positions_value": 1070485.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1591845.75,
+      "cash": 362589.75,
+      "positions_value": 1229256.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1589121.75,
+      "cash": 362589.75,
+      "positions_value": 1226532.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1590659.75,
+      "cash": 362589.75,
+      "positions_value": 1228070.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1572182.74,
+      "cash": 359579.74,
+      "positions_value": 1212603.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1586294.74,
+      "cash": 359579.74,
+      "positions_value": 1226715.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1583430.74,
+      "cash": 359579.74,
+      "positions_value": 1223851.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1582418.74,
+      "cash": 359579.74,
+      "positions_value": 1222839.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1584820.74,
+      "cash": 359579.74,
+      "positions_value": 1225241.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1583364.8,
+      "cash": 355515.8,
+      "positions_value": 1227849.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1587728.8,
+      "cash": 355515.8,
+      "positions_value": 1232213.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1582670.38,
+      "cash": 347435.38,
+      "positions_value": 1235235.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1590803.34,
+      "cash": 369699.34,
+      "positions_value": 1221104.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1609888.0,
+      "cash": 391717.0,
+      "positions_value": 1218171.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1611871.0,
+      "cash": 391717.0,
+      "positions_value": 1220154.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1613811.0,
+      "cash": 391717.0,
+      "positions_value": 1222094.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1619434.0,
+      "cash": 391717.0,
+      "positions_value": 1227717.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1611451.0,
+      "cash": 391717.0,
+      "positions_value": 1219734.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1603502.88,
+      "cash": 382779.88,
+      "positions_value": 1220723.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1597446.88,
+      "cash": 382779.88,
+      "positions_value": 1214667.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1603236.88,
+      "cash": 382779.88,
+      "positions_value": 1220457.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1608417.06,
+      "cash": 377101.06,
+      "positions_value": 1231316.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1611252.06,
+      "cash": 377101.06,
+      "positions_value": 1234151.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1613728.06,
+      "cash": 377101.06,
+      "positions_value": 1236627.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1600926.16,
+      "cash": 380658.16,
+      "positions_value": 1220268.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1597024.58,
+      "cash": 376929.58,
+      "positions_value": 1220095.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1603934.58,
+      "cash": 376929.58,
+      "positions_value": 1227005.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1609293.58,
+      "cash": 376929.58,
+      "positions_value": 1232364.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1606458.47,
+      "cash": 391892.47,
+      "positions_value": 1214566.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1608986.47,
+      "cash": 391892.47,
+      "positions_value": 1217094.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1626509.47,
+      "cash": 391892.47,
+      "positions_value": 1234617.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1625237.47,
+      "cash": 391892.47,
+      "positions_value": 1233345.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1613959.47,
+      "cash": 391892.47,
+      "positions_value": 1222067.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1611720.05,
+      "cash": 391023.05,
+      "positions_value": 1220697.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1626332.05,
+      "cash": 391023.05,
+      "positions_value": 1235309.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1638068.77,
+      "cash": 413668.77,
+      "positions_value": 1224400.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1660786.77,
+      "cash": 413668.77,
+      "positions_value": 1247118.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1692713.47,
+      "cash": 431816.47,
+      "positions_value": 1260897.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1678169.69,
+      "cash": 539740.69,
+      "positions_value": 1138429.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1755435.26,
+      "cash": 566774.26,
+      "positions_value": 1188661.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1703486.91,
+      "cash": 537117.91,
+      "positions_value": 1166369.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1686453.02,
+      "cash": 499944.02,
+      "positions_value": 1186509.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1671179.86,
+      "cash": 484556.86,
+      "positions_value": 1186623.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1703462.86,
+      "cash": 484556.86,
+      "positions_value": 1218906.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1685480.86,
+      "cash": 484556.86,
+      "positions_value": 1200924.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1683793.86,
+      "cash": 484556.86,
+      "positions_value": 1199237.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1689476.66,
+      "cash": 480094.66,
+      "positions_value": 1209382.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1724955.91,
+      "cash": 522290.91,
+      "positions_value": 1202665.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1741386.54,
+      "cash": 518619.54,
+      "positions_value": 1222767.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1764960.91,
+      "cash": 548435.91,
+      "positions_value": 1216525.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1777314.96,
+      "cash": 529477.96,
+      "positions_value": 1247837.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1758913.96,
+      "cash": 529477.96,
+      "positions_value": 1229436.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1763712.54,
+      "cash": 553398.54,
+      "positions_value": 1210314.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1783797.64,
+      "cash": 565953.64,
+      "positions_value": 1217844.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1788683.66,
+      "cash": 593415.66,
+      "positions_value": 1195268.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1790608.54,
+      "cash": 588524.54,
+      "positions_value": 1202084.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1803975.54,
+      "cash": 588524.54,
+      "positions_value": 1215451.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1801727.54,
+      "cash": 588524.54,
+      "positions_value": 1213203.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1831362.2,
+      "cash": 618341.2,
+      "positions_value": 1213021.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1870072.21,
+      "cash": 636667.21,
+      "positions_value": 1233405.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1857036.25,
+      "cash": 652584.25,
+      "positions_value": 1204452.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1874855.25,
+      "cash": 652584.25,
+      "positions_value": 1222271.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1892841.74,
+      "cash": 673608.74,
+      "positions_value": 1219233.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1899968.72,
+      "cash": 674250.72,
+      "positions_value": 1225718.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1883884.72,
+      "cash": 674250.72,
+      "positions_value": 1209634.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1909365.72,
+      "cash": 674250.72,
+      "positions_value": 1235115.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1882641.34,
+      "cash": 709768.34,
+      "positions_value": 1172873.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1853497.68,
+      "cash": 991296.68,
+      "positions_value": 862201.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1830132.61,
+      "cash": 1383617.61,
+      "positions_value": 446515.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1836346.17,
+      "cash": 1083730.17,
+      "positions_value": 752616.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1843138.07,
+      "cash": 1092958.07,
+      "positions_value": 750180.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1843186.32,
+      "cash": 942985.32,
+      "positions_value": 900201.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1826020.32,
+      "cash": 942985.32,
+      "positions_value": 883035.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1832006.32,
+      "cash": 942985.32,
+      "positions_value": 889021.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1841379.32,
+      "cash": 942985.32,
+      "positions_value": 898394.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1846923.73,
+      "cash": 666080.73,
+      "positions_value": 1180843.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1842535.73,
+      "cash": 666080.73,
+      "positions_value": 1176455.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1856203.73,
+      "cash": 666080.73,
+      "positions_value": 1190123.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1843066.73,
+      "cash": 666080.73,
+      "positions_value": 1176986.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1865077.73,
+      "cash": 666080.73,
+      "positions_value": 1198997.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1871297.73,
+      "cash": 666080.73,
+      "positions_value": 1205217.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1873917.73,
+      "cash": 666080.73,
+      "positions_value": 1207837.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1883759.73,
+      "cash": 666080.73,
+      "positions_value": 1217679.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1886592.73,
+      "cash": 666080.73,
+      "positions_value": 1220512.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1904336.19,
+      "cash": 662459.19,
+      "positions_value": 1241877.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1887642.19,
+      "cash": 662459.19,
+      "positions_value": 1225183.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1902899.19,
+      "cash": 662459.19,
+      "positions_value": 1240440.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1886998.65,
+      "cash": 661498.65,
+      "positions_value": 1225500.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1899583.03,
+      "cash": 648308.03,
+      "positions_value": 1251275.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1898008.03,
+      "cash": 648308.03,
+      "positions_value": 1249700.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1909480.03,
+      "cash": 648308.03,
+      "positions_value": 1261172.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1899215.34,
+      "cash": 655646.34,
+      "positions_value": 1243569.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1897659.08,
+      "cash": 646993.08,
+      "positions_value": 1250666.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1918920.08,
+      "cash": 646993.08,
+      "positions_value": 1271927.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1934420.08,
+      "cash": 646993.08,
+      "positions_value": 1287427.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1946839.08,
+      "cash": 646993.08,
+      "positions_value": 1299846.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1943543.28,
+      "cash": 677040.28,
+      "positions_value": 1266503.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1945596.76,
+      "cash": 699408.76,
+      "positions_value": 1246188.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1965881.76,
+      "cash": 699408.76,
+      "positions_value": 1266473.0
+    },
+    {
+      "date": "1970-01-01",
+      "total_value": 1953948.69,
+      "cash": 836592.69,
+      "positions_value": 1117356.0
+    }
+  ],
+  "trades": [
+    {
+      "symbol": "601838",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 14.204,
+      "exit_price": 14.006,
+      "pnl": -2272.39,
+      "pnl_pct": -0.014,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "600276",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 41.952,
+      "exit_price": 43.367,
+      "pnl": 4754.06,
+      "pnl_pct": 0.0337,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "300832",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 59.66,
+      "exit_price": 68.54,
+      "pnl": 21978.07,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "688271",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 119.119,
+      "exit_price": 136.85,
+      "pnl": 21063.55,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "002714",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 38.538,
+      "exit_price": 39.351,
+      "pnl": 2891.63,
+      "pnl_pct": 0.0211,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "600025",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 7.648,
+      "exit_price": 8.786,
+      "pnl": 22087.82,
+      "pnl_pct": 0.1489,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "600025",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 8.879,
+      "exit_price": 8.651,
+      "pnl": -4035.33,
+      "pnl_pct": -0.0256,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "002241",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 18.418,
+      "exit_price": 21.16,
+      "pnl": 21983.97,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "601088",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 28.629,
+      "exit_price": 32.89,
+      "pnl": 21936.77,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "600522",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 12.372,
+      "exit_price": 11.439,
+      "pnl": -11479.03,
+      "pnl_pct": -0.0755,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "601988",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 3.834,
+      "exit_price": 4.404,
+      "pnl": 22089.14,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "601939",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 6.116,
+      "exit_price": 7.026,
+      "pnl": 22080.59,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "601288",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 3.534,
+      "exit_price": 4.059,
+      "pnl": 22077.2,
+      "pnl_pct": 0.1489,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "601009",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 7.467,
+      "exit_price": 8.579,
+      "pnl": 22117.61,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "000338",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 15.335,
+      "exit_price": 15.954,
+      "pnl": 5800.31,
+      "pnl_pct": 0.0403,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "600690",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 21.321,
+      "exit_price": 24.495,
+      "pnl": 21992.82,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "601077",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 4.044,
+      "exit_price": 4.646,
+      "pnl": 22108.47,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "601127",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 89.089,
+      "exit_price": 102.35,
+      "pnl": 21004.55,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "603986",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 69.369,
+      "exit_price": 79.695,
+      "pnl": 21466.24,
+      "pnl_pct": 0.1489,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "600926",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 11.121,
+      "exit_price": 11.029,
+      "pnl": -1437.58,
+      "pnl_pct": -0.0083,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "002714",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 37.037,
+      "exit_price": 38.362,
+      "pnl": 5098.92,
+      "pnl_pct": 0.0358,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "600660",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 41.942,
+      "exit_price": 43.137,
+      "pnl": 3985.95,
+      "pnl_pct": 0.0285,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "002916",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 87.107,
+      "exit_price": 89.51,
+      "pnl": 3887.93,
+      "pnl_pct": 0.0276,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "600233",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 14.755,
+      "exit_price": 15.035,
+      "pnl": 2632.71,
+      "pnl_pct": 0.019,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "002241",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 17.618,
+      "exit_price": 16.883,
+      "pnl": -6429.81,
+      "pnl_pct": -0.0417,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "601127",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 102.312,
+      "exit_price": 91.989,
+      "pnl": -14620.04,
+      "pnl_pct": -0.1009,
+      "holding_days": 0,
+      "exit_reason": "stop_loss"
+    },
+    {
+      "symbol": "603986",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 80.08,
+      "exit_price": 72.0,
+      "pnl": -14712.61,
+      "pnl_pct": -0.1009,
+      "holding_days": 0,
+      "exit_reason": "stop_loss"
+    },
+    {
+      "symbol": "002625",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 19.029,
+      "exit_price": 21.861,
+      "pnl": 21871.58,
+      "pnl_pct": 0.1489,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "600160",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 22.072,
+      "exit_price": 23.107,
+      "pnl": 6832.51,
+      "pnl_pct": 0.0469,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "002938",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 23.133,
+      "exit_price": 22.388,
+      "pnl": -4957.59,
+      "pnl_pct": -0.0322,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "002625",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 24.214,
+      "exit_price": 21.771,
+      "pnl": -15323.39,
+      "pnl_pct": -0.1009,
+      "holding_days": 0,
+      "exit_reason": "stop_loss"
+    },
+    {
+      "symbol": "603993",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 7.848,
+      "exit_price": 9.016,
+      "pnl": 22087.82,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "000338",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 17.217,
+      "exit_price": 18.142,
+      "pnl": 7839.18,
+      "pnl_pct": 0.0537,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "601009",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 8.699,
+      "exit_price": 9.021,
+      "pnl": 5341.51,
+      "pnl_pct": 0.037,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "600674",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 16.456,
+      "exit_price": 16.633,
+      "pnl": 1413.11,
+      "pnl_pct": 0.0108,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "601229",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 6.386,
+      "exit_price": 7.337,
+      "pnl": 22115.25,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "600926",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 11.401,
+      "exit_price": 13.098,
+      "pnl": 22008.9,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "600690",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 28.278,
+      "exit_price": 31.359,
+      "pnl": 16109.85,
+      "pnl_pct": 0.1089,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "600660",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 44.945,
+      "exit_price": 51.635,
+      "pnl": 21855.65,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "603986",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 75.776,
+      "exit_price": 87.055,
+      "pnl": 21215.48,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "688271",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 129.109,
+      "exit_price": 126.803,
+      "pnl": -2717.83,
+      "pnl_pct": -0.0179,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "603986",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 86.707,
+      "exit_price": 82.837,
+      "pnl": -6761.29,
+      "pnl_pct": -0.0446,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "601838",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 15.365,
+      "exit_price": 15.704,
+      "pnl": 3089.59,
+      "pnl_pct": 0.0221,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "002241",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 16.236,
+      "exit_price": 16.104,
+      "pnl": -1410.13,
+      "pnl_pct": -0.0082,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "600025",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 8.839,
+      "exit_price": 10.154,
+      "pnl": 22011.56,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "601009",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 9.58,
+      "exit_price": 10.08,
+      "pnl": 7600.88,
+      "pnl_pct": 0.0522,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "601229",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 7.287,
+      "exit_price": 7.732,
+      "pnl": 8959.52,
+      "pnl_pct": 0.0611,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "601117",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 8.078,
+      "exit_price": 8.482,
+      "pnl": 7259.66,
+      "pnl_pct": 0.0499,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "002916",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 93.343,
+      "exit_price": 107.237,
+      "pnl": 22007.57,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "002938",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 30.09,
+      "exit_price": 34.569,
+      "pnl": 21726.43,
+      "pnl_pct": 0.1489,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "002916",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 107.107,
+      "exit_price": 106.394,
+      "pnl": -1192.54,
+      "pnl_pct": -0.0067,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "002594",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 234.865,
+      "exit_price": 250.419,
+      "pnl": 9137.49,
+      "pnl_pct": 0.0662,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "300476",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 33.534,
+      "exit_price": 30.15,
+      "pnl": -15059.99,
+      "pnl_pct": -0.1009,
+      "holding_days": 0,
+      "exit_reason": "stop_loss"
+    },
+    {
+      "symbol": "002241",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 17.337,
+      "exit_price": 19.49,
+      "pnl": 18299.36,
+      "pnl_pct": 0.1242,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "601985",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 9.379,
+      "exit_price": 10.775,
+      "pnl": 22113.78,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "600674",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 17.017,
+      "exit_price": 19.55,
+      "pnl": 22066.58,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "600066",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 26.446,
+      "exit_price": 25.045,
+      "pnl": -8030.67,
+      "pnl_pct": -0.053,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "003816",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 4.234,
+      "exit_price": 4.864,
+      "pnl": 22087.52,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "601838",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 15.676,
+      "exit_price": 14.216,
+      "pnl": -14044.52,
+      "pnl_pct": -0.0931,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "600160",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 23.754,
+      "exit_price": 23.636,
+      "pnl": -933.14,
+      "pnl_pct": -0.0049,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "601939",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 6.977,
+      "exit_price": 7.363,
+      "pnl": 8085.9,
+      "pnl_pct": 0.0553,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "002241",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 19.54,
+      "exit_price": 22.448,
+      "pnl": 21882.49,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "002916",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 123.123,
+      "exit_price": 123.466,
+      "pnl": 219.48,
+      "pnl_pct": 0.0028,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "603993",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 9.059,
+      "exit_price": 8.611,
+      "pnl": -7571.27,
+      "pnl_pct": -0.0494,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "600660",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 47.928,
+      "exit_price": 47.762,
+      "pnl": -706.12,
+      "pnl_pct": -0.0035,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "688472",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 9.299,
+      "exit_price": 9.101,
+      "pnl": -3384.72,
+      "pnl_pct": -0.0213,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "601288",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 4.735,
+      "exit_price": 4.615,
+      "pnl": -3973.59,
+      "pnl_pct": -0.0252,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "600674",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 19.7,
+      "exit_price": 18.891,
+      "pnl": -6331.93,
+      "pnl_pct": -0.041,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "600919",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 7.588,
+      "exit_price": 7.722,
+      "pnl": 2455.63,
+      "pnl_pct": 0.0178,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "003816",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 4.795,
+      "exit_price": 4.955,
+      "pnl": 4814.2,
+      "pnl_pct": 0.0334,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "601006",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 6.757,
+      "exit_price": 6.963,
+      "pnl": 4378.46,
+      "pnl_pct": 0.0305,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "688256",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 268.268,
+      "exit_price": 241.2,
+      "pnl": -13690.9,
+      "pnl_pct": -0.1009,
+      "holding_days": 0,
+      "exit_reason": "stop_loss"
+    },
+    {
+      "symbol": "300759",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 21.201,
+      "exit_price": 20.889,
+      "pnl": -2374.72,
+      "pnl_pct": -0.0147,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "688271",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 110.741,
+      "exit_price": 110.889,
+      "pnl": 5.48,
+      "pnl_pct": 0.0013,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "601136",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 20.37,
+      "exit_price": 19.301,
+      "pnl": -7991.75,
+      "pnl_pct": -0.0525,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "688472",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 9.359,
+      "exit_price": 10.752,
+      "pnl": 22066.58,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "600377",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 12.252,
+      "exit_price": 14.076,
+      "pnl": 22026.46,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "601838",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 15.095,
+      "exit_price": 14.136,
+      "pnl": -9678.31,
+      "pnl_pct": -0.0635,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "600919",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 8.038,
+      "exit_price": 7.702,
+      "pnl": -6431.01,
+      "pnl_pct": -0.0418,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "600233",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 15.325,
+      "exit_price": 15.774,
+      "pnl": 4155.42,
+      "pnl_pct": 0.0293,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "600690",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 25.205,
+      "exit_price": 24.296,
+      "pnl": -5552.4,
+      "pnl_pct": -0.0361,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "300979",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 59.6,
+      "exit_price": 65.764,
+      "pnl": 15197.84,
+      "pnl_pct": 0.1034,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "600276",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 42.232,
+      "exit_price": 42.667,
+      "pnl": 1328.71,
+      "pnl_pct": 0.0103,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "600660",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 46.246,
+      "exit_price": 53.13,
+      "pnl": 21806.97,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "300832",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 62.933,
+      "exit_price": 72.3,
+      "pnl": 21329.2,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "600989",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 15.025,
+      "exit_price": 17.261,
+      "pnl": 21918.92,
+      "pnl_pct": 0.1489,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "600522",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 12.863,
+      "exit_price": 14.777,
+      "pnl": 21986.92,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "300628",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 33.373,
+      "exit_price": 38.341,
+      "pnl": 21638.22,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "601058",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 13.814,
+      "exit_price": 15.87,
+      "pnl": 21983.97,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "603986",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 70.05,
+      "exit_price": 80.477,
+      "pnl": 21676.87,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "601006",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 6.146,
+      "exit_price": 7.061,
+      "pnl": 22098.44,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "300122",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 30.18,
+      "exit_price": 34.672,
+      "pnl": 21791.48,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "300418",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 44.775,
+      "exit_price": 40.257,
+      "pnl": -15081.34,
+      "pnl_pct": -0.1009,
+      "holding_days": 0,
+      "exit_reason": "stop_loss"
+    },
+    {
+      "symbol": "600160",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 24.514,
+      "exit_price": 22.041,
+      "pnl": -15263.21,
+      "pnl_pct": -0.1009,
+      "holding_days": 0,
+      "exit_reason": "stop_loss"
+    },
+    {
+      "symbol": "300803",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 92.022,
+      "exit_price": 105.719,
+      "pnl": 21696.05,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "600036",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 41.411,
+      "exit_price": 37.233,
+      "pnl": -15216.52,
+      "pnl_pct": -0.1009,
+      "holding_days": 0,
+      "exit_reason": "stop_loss"
+    },
+    {
+      "symbol": "300122",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 39.039,
+      "exit_price": 36.553,
+      "pnl": -9625.82,
+      "pnl_pct": -0.0637,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "300418",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 43.043,
+      "exit_price": 38.7,
+      "pnl": -14937.39,
+      "pnl_pct": -0.1009,
+      "holding_days": 0,
+      "exit_reason": "stop_loss"
+    },
+    {
+      "symbol": "002916",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 120.12,
+      "exit_price": 116.174,
+      "pnl": -4916.78,
+      "pnl_pct": -0.0329,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "601127",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 95.095,
+      "exit_price": 85.5,
+      "pnl": -14559.35,
+      "pnl_pct": -0.1009,
+      "holding_days": 0,
+      "exit_reason": "stop_loss"
+    },
+    {
+      "symbol": "603019",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 56.056,
+      "exit_price": 50.4,
+      "pnl": -14876.08,
+      "pnl_pct": -0.1009,
+      "holding_days": 0,
+      "exit_reason": "stop_loss"
+    },
+    {
+      "symbol": "300418",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 39.339,
+      "exit_price": 35.37,
+      "pnl": -15258.2,
+      "pnl_pct": -0.1009,
+      "holding_days": 0,
+      "exit_reason": "stop_loss"
+    },
+    {
+      "symbol": "600233",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 16.597,
+      "exit_price": 16.733,
+      "pnl": 1034.25,
+      "pnl_pct": 0.0082,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "600066",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 26.557,
+      "exit_price": 24.645,
+      "pnl": -10882.14,
+      "pnl_pct": -0.072,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "002625",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 27.507,
+      "exit_price": 31.602,
+      "pnl": 21888.39,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "603993",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 8.018,
+      "exit_price": 7.992,
+      "pnl": -680.67,
+      "pnl_pct": -0.0032,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "300803",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 80.28,
+      "exit_price": 92.23,
+      "pnl": 21293.66,
+      "pnl_pct": 0.1489,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "002916",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 113.714,
+      "exit_price": 112.587,
+      "pnl": -1654.46,
+      "pnl_pct": -0.0099,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "300803",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 92.673,
+      "exit_price": 106.467,
+      "pnl": 21849.45,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "300803",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 107.898,
+      "exit_price": 97.011,
+      "pnl": -14316.9,
+      "pnl_pct": -0.1009,
+      "holding_days": 0,
+      "exit_reason": "stop_loss"
+    },
+    {
+      "symbol": "600036",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 38.769,
+      "exit_price": 39.061,
+      "pnl": 917.29,
+      "pnl_pct": 0.0075,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "002625",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 35.866,
+      "exit_price": 41.204,
+      "pnl": 21668.76,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "600660",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 56.556,
+      "exit_price": 58.282,
+      "pnl": 4288.42,
+      "pnl_pct": 0.0305,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "603986",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 82.282,
+      "exit_price": 88.511,
+      "pnl": 11005.44,
+      "pnl_pct": 0.0757,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "601127",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 96.476,
+      "exit_price": 110.837,
+      "pnl": 21324.63,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "300803",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 96.576,
+      "exit_price": 94.455,
+      "pnl": -3365.73,
+      "pnl_pct": -0.022,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "601127",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 107.017,
+      "exit_price": 122.946,
+      "pnl": 22077.49,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "603019",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 58.538,
+      "exit_price": 67.252,
+      "pnl": 21565.06,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "002625",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 39.009,
+      "exit_price": 44.815,
+      "pnl": 21843.26,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "601058",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 15.105,
+      "exit_price": 14.545,
+      "pnl": -5727.73,
+      "pnl_pct": -0.0371,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "603019",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 70.57,
+      "exit_price": 81.075,
+      "pnl": 21837.95,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "600585",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 25.926,
+      "exit_price": 26.533,
+      "pnl": 3266.37,
+      "pnl_pct": 0.0234,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "601058",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 14.605,
+      "exit_price": 14.515,
+      "pnl": -1101.5,
+      "pnl_pct": -0.0061,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "600160",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 20.52,
+      "exit_price": 22.028,
+      "pnl": 10795.34,
+      "pnl_pct": 0.0735,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "601127",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 129.129,
+      "exit_price": 148.35,
+      "pnl": 20930.8,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "002625",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 46.777,
+      "exit_price": 42.057,
+      "pnl": -15278.23,
+      "pnl_pct": -0.1009,
+      "holding_days": 0,
+      "exit_reason": "stop_loss"
+    },
+    {
+      "symbol": "601058",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 14.775,
+      "exit_price": 14.585,
+      "pnl": -2104.04,
+      "pnl_pct": -0.0128,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "300418",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 48.248,
+      "exit_price": 43.38,
+      "pnl": -15266.38,
+      "pnl_pct": -0.1009,
+      "holding_days": 0,
+      "exit_reason": "stop_loss"
+    },
+    {
+      "symbol": "002916",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 114.314,
+      "exit_price": 102.78,
+      "pnl": -15168.29,
+      "pnl_pct": -0.1009,
+      "holding_days": 0,
+      "exit_reason": "stop_loss"
+    },
+    {
+      "symbol": "601127",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 138.739,
+      "exit_price": 124.74,
+      "pnl": -14160.89,
+      "pnl_pct": -0.1009,
+      "holding_days": 0,
+      "exit_reason": "stop_loss"
+    },
+    {
+      "symbol": "688271",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 126.126,
+      "exit_price": 144.9,
+      "pnl": 20444.03,
+      "pnl_pct": 0.1489,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "300033",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 317.317,
+      "exit_price": 364.55,
+      "pnl": 18703.49,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "601838",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 16.396,
+      "exit_price": 16.044,
+      "pnl": -3397.0,
+      "pnl_pct": -0.0215,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "300442",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 48.909,
+      "exit_price": 45.534,
+      "pnl": -10300.9,
+      "pnl_pct": -0.069,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "601838",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 16.436,
+      "exit_price": 16.164,
+      "pnl": -2671.88,
+      "pnl_pct": -0.0166,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "002916",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 116.266,
+      "exit_price": 117.203,
+      "pnl": 941.0,
+      "pnl_pct": 0.0081,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "600919",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 8.498,
+      "exit_price": 9.763,
+      "pnl": 22040.62,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "001965",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 12.182,
+      "exit_price": 13.995,
+      "pnl": 22080.0,
+      "pnl_pct": 0.1488,
+      "holding_days": 0,
+      "exit_reason": "take_profit"
+    },
+    {
+      "symbol": "002916",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 128.659,
+      "exit_price": 124.875,
+      "pnl": -4340.45,
+      "pnl_pct": -0.0294,
+      "holding_days": 0,
+      "exit_reason": "signal_reverse"
+    },
+    {
+      "symbol": "600015",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 7.487,
+      "exit_price": 8.002,
+      "pnl": 10082.15,
+      "pnl_pct": 0.0687,
+      "holding_days": 0,
+      "exit_reason": "backtest_end"
+    },
+    {
+      "symbol": "601988",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 4.985,
+      "exit_price": 5.504,
+      "pnl": 15421.86,
+      "pnl_pct": 0.1042,
+      "holding_days": 0,
+      "exit_reason": "backtest_end"
+    },
+    {
+      "symbol": "601818",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 3.604,
+      "exit_price": 3.866,
+      "pnl": 10712.17,
+      "pnl_pct": 0.0729,
+      "holding_days": 0,
+      "exit_reason": "backtest_end"
+    },
+    {
+      "symbol": "601288",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 4.775,
+      "exit_price": 5.335,
+      "pnl": 17362.79,
+      "pnl_pct": 0.1173,
+      "holding_days": 0,
+      "exit_reason": "backtest_end"
+    },
+    {
+      "symbol": "601328",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 7.457,
+      "exit_price": 7.762,
+      "pnl": 5923.25,
+      "pnl_pct": 0.0409,
+      "holding_days": 0,
+      "exit_reason": "backtest_end"
+    },
+    {
+      "symbol": "600066",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 24.845,
+      "exit_price": 26.354,
+      "pnl": 8847.24,
+      "pnl_pct": 0.0607,
+      "holding_days": 0,
+      "exit_reason": "backtest_end"
+    },
+    {
+      "symbol": "002625",
+      "entry_date": "1970-01-01",
+      "exit_date": "1970-01-01",
+      "entry_price": 48.228,
+      "exit_price": 47.752,
+      "pnl": -1667.98,
+      "pnl_pct": -0.0099,
+      "holding_days": 0,
+      "exit_reason": "backtest_end"
+    }
+  ],
+  "validations": [
+    "[PASSED] 有效交易数 > 0 (实际: 146)",
+    "[PASSED] 回测有实际交易发生 (总收益率: 95.39%)",
+    "[PASSED] 最大回撤 < 50% (实际: 4.80%)",
+    "[PASSED] 夏普比率 > -2 (实际: 3.83)",
+    "[PASSED] 收益率优于基准-0.67% (实际: 95.39%)"
+  ],
+  "validation_status": "PASSED"
+}

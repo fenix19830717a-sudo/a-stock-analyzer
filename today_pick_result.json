@@ -1,0 +1,96 @@
+{
+  "date": "2026-06-09 11:01",
+  "total_analyzed": 300,
+  "top_picks": [
+    {
+      "code": "601009",
+      "name": "南京银行",
+      "price": 11.36,
+      "hmm_up_prob": 0.25,
+      "signal": "强烈买入",
+      "comp_score": 95,
+      "hmm_trend": "下跌"
+    },
+    {
+      "code": "000333",
+      "name": "美的集团",
+      "price": 82.85,
+      "hmm_up_prob": 0.25,
+      "signal": "强烈买入",
+      "comp_score": 95,
+      "hmm_trend": "下跌"
+    },
+    {
+      "code": "600522",
+      "name": "中天科技",
+      "price": 49.53,
+      "hmm_up_prob": 0.25,
+      "signal": "强烈买入",
+      "comp_score": 90,
+      "hmm_trend": "下跌"
+    },
+    {
+      "code": "601100",
+      "name": "恒立液压",
+      "price": 119.77,
+      "hmm_up_prob": 0.25,
+      "signal": "强烈买入",
+      "comp_score": 90,
+      "hmm_trend": "下跌"
+    },
+    {
+      "code": "601398",
+      "name": "工商银行",
+      "price": 7.5,
+      "hmm_up_prob": 0.25,
+      "signal": "强烈买入",
+      "comp_score": 90,
+      "hmm_trend": "下跌"
+    },
+    {
+      "code": "600015",
+      "name": "华夏银行",
+      "price": 6.79,
+      "hmm_up_prob": 0.25,
+      "signal": "强烈买入",
+      "comp_score": 85,
+      "hmm_trend": "下跌"
+    },
+    {
+      "code": "600025",
+      "name": "华能水电",
+      "price": 9.67,
+      "hmm_up_prob": 0.25,
+      "signal": "强烈买入",
+      "comp_score": 85,
+      "hmm_trend": "下跌"
+    },
+    {
+      "code": "600377",
+      "name": "宁沪高速",
+      "price": 12.63,
+      "hmm_up_prob": 0.25,
+      "signal": "强烈买入",
+      "comp_score": 85,
+      "hmm_trend": "下跌"
+    },
+    {
+      "code": "600795",
+      "name": "国电电力",
+      "price": 5.0,
+      "hmm_up_prob": 0.25,
+      "signal": "强烈买入",
+      "comp_score": 85,
+      "hmm_trend": "下跌"
+    },
+    {
+      "code": "600905",
+      "name": "三峡能源",
+      "price": 4.12,
+      "hmm_up_prob": 0.25,
+      "signal": "强烈买入",
+      "comp_score": 85,
+      "hmm_trend": "下跌"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "timestamp": "2026-06-07 09:01:01",
+  "stock_count": 20,
+  "posterior_distribution": {
+    "[0.4,0.5)": {
+      "total": 5587,
+      "correct": 3047,
+      "accuracy": 54.54
+    },
+    "[0.0,0.3)": {
+      "total": 534,
+      "correct": 308,
+      "accuracy": 57.68
+    },
+    "[0.8,1.0]": {
+      "total": 323,
+      "correct": 157,
+      "accuracy": 48.61
+    },
+    "[0.3,0.4)": {
+      "total": 3828,
+      "correct": 2149,
+      "accuracy": 56.14
+    },
+    "[0.5,0.6)": {
+      "total": 1976,
+      "correct": 969,
+      "accuracy": 49.04
+    },
+    "[0.6,0.7)": {
+      "total": 774,
+      "correct": 369,
+      "accuracy": 47.67
+    },
+    "[0.7,0.8)": {
+      "total": 297,
+      "correct": 129,
+      "accuracy": 43.43
+    }
+  },
+  "multi_signal_accuracy": {
+    "Level 1 (仅HMM)": {
+      "total": 2542,
+      "correct": 1371,
+      "accuracy": 53.93
+    },
+    "Level 2 (HMM+技术面)": {
+      "total": 769,
+      "correct": 415,
+      "accuracy": 53.97
+    },
+    "Level 3 (HMM+技术面+量价)": {
+      "total": 45,
+      "correct": 28,
+      "accuracy": 62.22
+    }
+  },
+  "threshold_optimization": {
+    "best_threshold": {
+      "buy_threshold": 0.8,
+      "sell_threshold": 0.35
+    },
+    "high_accuracy_combos": [],
+    "all_results_count": 36
+  },
+  "rolling_validation": [
+    {
+      "window": {
+        "train_start": "2022-01-01",
+        "train_end": "2023-01-01",
+        "test_start": "2023-01-01",
+        "test_end": "2023-04-01"
+      },
+      "signal_count": 0,
+      "correct": 0,
+      "accuracy": 0
+    },
+    {
+      "window": {
+        "train_start": "2023-01-01",
+        "train_end": "2024-01-01",
+        "test_start": "2024-01-01",
+        "test_end": "2024-04-01"
+      },
+      "signal_count": 0,
+      "correct": 0,
+      "accuracy": 0
+    }
+  ],
+  "backtest": {
+    "total_trades": 106,
+    "winning_trades": 48,
+    "losing_trades": 58,
+    "win_rate": 45.28,
+    "profit_loss_ratio": 1.41,
+    "total_return": 10.54,
+    "max_drawdown": 9.07,
+    "sharpe_ratio": 0.43,
+    "avg_win": 7.63,
+    "avg_loss": 5.41
+  }
+}

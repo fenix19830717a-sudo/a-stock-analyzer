@@ -1,0 +1,70 @@
+{
+  "backtest_period": "2024-01-01 ~ 2024-12-31",
+  "train_period": "2022-01-01 ~ 2024-12-31",
+  "stocks": [
+    "sh.600519",
+    "sh.601318",
+    "sh.600036",
+    "sh.600276",
+    "sh.601012",
+    "sh.600887",
+    "sh.600900",
+    "sh.601166",
+    "sh.600809",
+    "sh.601888",
+    "sz.000333",
+    "sz.000858",
+    "sz.000568",
+    "sz.002475",
+    "sz.300750",
+    "sz.300059",
+    "sz.002714",
+    "sz.000651",
+    "sz.002415",
+    "sz.300015"
+  ],
+  "configs": {
+    "Baseline": "{'enhanced': False, 'use_scaling': False, 'buy_threshold': 0.55, 'sell_threshold': 0.45}",
+    "优化版": "{'enhanced': True, 'use_scaling': True, 'buy_threshold': 0.5, 'sell_threshold': 0.4}",
+    "保守优化": "{'enhanced': True, 'use_scaling': True, 'buy_threshold': 0.55, 'sell_threshold': 0.45}"
+  },
+  "results": {
+    "Baseline": {
+      "config": "Baseline",
+      "total_return": 12.39,
+      "annual_return": -0.36,
+      "sharpe_ratio": 0.04,
+      "max_drawdown": 6.75,
+      "win_rate": 48.9,
+      "profit_loss_ratio": 1.59,
+      "total_trades": 47,
+      "avg_pnl": 1.32,
+      "status": "正常"
+    },
+    "优化版": {
+      "config": "优化版",
+      "total_return": 7.79,
+      "annual_return": 0.83,
+      "sharpe_ratio": 0.13,
+      "max_drawdown": 9.32,
+      "win_rate": 48.2,
+      "profit_loss_ratio": 1.53,
+      "total_trades": 56,
+      "avg_pnl": 0.7,
+      "status": "正常"
+    },
+    "保守优化": {
+      "config": "保守优化",
+      "total_return": 7.79,
+      "annual_return": 0.83,
+      "sharpe_ratio": 0.13,
+      "max_drawdown": 9.32,
+      "win_rate": 48.2,
+      "profit_loss_ratio": 1.53,
+      "total_trades": 56,
+      "avg_pnl": 0.7,
+      "status": "正常"
+    }
+  },
+  "timestamp": "2026-06-07 05:22:14"
+}

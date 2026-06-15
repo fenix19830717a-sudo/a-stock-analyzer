@@ -151,9 +151,21 @@ class SignalGenerator:
 
         # Layer 1: HMM趋势定性分析
         try:
-            trend_result = self.hmm_engine.predict_trend(df)
-            layer1_score = trend_result.get('trend_score', 0)
-            trend_state = trend_result.get('state_description', 'unknown')
+            trend_result = self.hmm_engine.analyze_trend(symbol, df)
+            if 'error' in trend_result:
+                layer1_score = 0
+                trend_state = 'unknown'
+            else:
+                # 从analyze_trend结果提取trend_score
+                direction = trend_result.get('trend_direction', '震荡')
+                up_prob = trend_result.get('up_probability', 0.5)
+                if direction == '上升':
+                    layer1_score = up_prob * 0.8
+                elif direction == '下降':
+                    layer1_score = -(1 - up_prob) * 0.8
+                else:
+                    layer1_score = (up_prob - 0.5) * 0.4
+                trend_state = trend_result.get('trend_direction', 'unknown')
         except Exception as e:
             self.logger.warning(f"HMM分析失败 {symbol}: {e}")
             layer1_score = 0
@@ -161,9 +173,26 @@ class SignalGenerator:
 
         # Layer 2: 技术面因子信号
         try:
-            signal_report = self.technical_engine.generate_signals(df)
-            layer2_score = signal_report.get('composite_score', 0)
-            primary_signal = signal_report.get('primary_signal', 'neutral')
+            trend_qual = {'trend_direction': trend_state, 'trend_strength': '中'}
+            signal_report = self.technical_engine.generate_signal(symbol, df, trend_qual)
+            direction = signal_report.get('direction', '震荡')
+            probability = signal_report.get('probability', 50)
+            if direction == '涨':
+                layer2_score = probability / 100
+            elif direction == '跌':
+                layer2_score = -probability / 100
+            else:
+                layer2_score = 0
+            if layer2_score > 0.5:
+                primary_signal = 'strong_buy'
+            elif layer2_score > 0.2:
+                primary_signal = 'buy'
+            elif layer2_score < -0.5:
+                primary_signal = 'strong_sell'
+            elif layer2_score < -0.2:
+                primary_signal = 'sell'
+            else:
+                primary_signal = 'neutral'
         except Exception as e:
             self.logger.warning(f"技术面分析失败 {symbol}: {e}")
             layer2_score = 0
@@ -579,7 +608,7 @@ class BacktestEngine:
 
         for symbol in symbols:
             try:
-                df = self.data_source.get_daily_data(symbol, load_start, end_date)
+                df = self.data_source.get_kline(symbol, load_start.strftime('%Y%m%d') if hasattr(load_start, 'strftime') else str(load_start).replace('-',''), end_date.strftime('%Y%m%d') if hasattr(end_date, 'strftime') else str(end_date).replace('-',''))
                 if df is not None and len(df) >= 60:
                     # 排除ST股
                     if self.config.exclude_st and self._is_st_stock(df):

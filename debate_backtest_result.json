@@ -1,0 +1,46 @@
+{
+  "debate_stats": {
+    "total": 27232,
+    "buy_votes": 9844,
+    "sell_votes": 8776,
+    "hold_votes": 8612,
+    "avg_bull_score": 5.69,
+    "avg_bear_score": 4.79
+  },
+  "group_a": {
+    "group": "A",
+    "total_return": 46.31,
+    "sharpe_ratio": 2.75,
+    "max_drawdown": 4.46,
+    "win_rate": 64.49,
+    "profit_factor": 2.59,
+    "total_trades": 138,
+    "avg_holding_days": 9.8
+  },
+  "group_b": {
+    "group": "B",
+    "total_return": 62.39,
+    "sharpe_ratio": 2.29,
+    "max_drawdown": 10.49,
+    "win_rate": 56.3,
+    "profit_factor": 1.87,
+    "total_trades": 357,
+    "avg_holding_days": 9.8
+  },
+  "group_c": {
+    "group": "C",
+    "total_return": 70.01,
+    "sharpe_ratio": 2.41,
+    "max_drawdown": 11.07,
+    "win_rate": 56.73,
+    "profit_factor": 1.98,
+    "total_trades": 349,
+    "avg_holding_days": 10.0
+  },
+  "enhancement": {
+    "B_vs_A_return_diff": 16.08,
+    "B_vs_A_sharpe_diff": -0.46,
+    "C_vs_A_return_diff": 23.7,
+    "C_vs_A_sharpe_diff": -0.34
+  }
+}

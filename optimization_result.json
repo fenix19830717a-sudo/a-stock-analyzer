@@ -1,0 +1,170 @@
+[
+  {
+    "total_return": 0.04308192852300091,
+    "sharpe": 1.6821445645528101,
+    "max_dd": 0.012280771132038949,
+    "total_trades": 64,
+    "real_trades": 32,
+    "win_rate": 0.65625,
+    "profit_factor": 1.8923108423800115,
+    "avg_days": 29.28125,
+    "label": "宽止损+长持仓+少股票+大仓位",
+    "params": {
+      "hmm_sens": 0.3,
+      "tech_sens": 0.15,
+      "stop_loss": 0.1,
+      "take_profit": 0.2,
+      "max_days": 30,
+      "max_pos": 3,
+      "pos_pct": 0.2
+    },
+    "score": 16.412873200383427
+  },
+  {
+    "total_return": 0.011223063518501818,
+    "sharpe": 0.4972969778616372,
+    "max_dd": 0.024815989753367212,
+    "total_trades": 192,
+    "real_trades": 96,
+    "win_rate": 0.53125,
+    "profit_factor": 1.1517440842527829,
+    "avg_days": 15.0,
+    "label": "中等参数",
+    "params": {
+      "hmm_sens": 0.3,
+      "tech_sens": 0.05,
+      "stop_loss": 0.07,
+      "take_profit": 0.15,
+      "max_days": 15,
+      "max_pos": 5,
+      "pos_pct": 0.15
+    },
+    "score": 11.52163400701091
+  },
+  {
+    "total_return": 0.011223063518501818,
+    "sharpe": 0.4972969778616372,
+    "max_dd": 0.024815989753367212,
+    "total_trades": 192,
+    "real_trades": 96,
+    "win_rate": 0.53125,
+    "profit_factor": 1.1517440842527829,
+    "avg_days": 15.0,
+    "label": "极低技术面阈值",
+    "params": {
+      "hmm_sens": 0.3,
+      "tech_sens": 0.0,
+      "stop_loss": 0.07,
+      "take_profit": 0.15,
+      "max_days": 15,
+      "max_pos": 5,
+      "pos_pct": 0.15
+    },
+    "score": 11.52163400701091
+  },
+  {
+    "total_return": -0.00477347160461708,
+    "sharpe": -0.06050710279198264,
+    "max_dd": 0.03309031515125504,
+    "total_trades": 192,
+    "real_trades": 96,
+    "win_rate": 0.5104166666666666,
+    "profit_factor": 0.9781965669691866,
+    "avg_days": 14.677083333333334,
+    "label": "紧止损+短持仓",
+    "params": {
+      "hmm_sens": 0.3,
+      "tech_sens": 0.05,
+      "stop_loss": 0.05,
+      "take_profit": 0.1,
+      "max_days": 15,
+      "max_pos": 5,
+      "pos_pct": 0.15
+    },
+    "score": 9.577936322339179
+  },
+  {
+    "total_return": -0.007814420162540628,
+    "sharpe": -0.27566768576347206,
+    "max_dd": 0.016865419922342896,
+    "total_trades": 398,
+    "real_trades": 199,
+    "win_rate": 0.5025125628140703,
+    "profit_factor": 0.9654654542169566,
+    "avg_days": 10.241206030150753,
+    "label": "紧止损+短持仓+多股票+小仓位",
+    "params": {
+      "hmm_sens": 0.3,
+      "tech_sens": 0.05,
+      "stop_loss": 0.05,
+      "take_profit": 0.1,
+      "max_days": 10,
+      "max_pos": 8,
+      "pos_pct": 0.1
+    },
+    "score": 9.093580335164159
+  },
+  {
+    "total_return": -0.007814420162540628,
+    "sharpe": -0.27566768576347206,
+    "max_dd": 0.016865419922342896,
+    "total_trades": 398,
+    "real_trades": 199,
+    "win_rate": 0.5025125628140703,
+    "profit_factor": 0.9654654542169566,
+    "avg_days": 10.241206030150753,
+    "label": "低灵敏度+紧止损",
+    "params": {
+      "hmm_sens": 0.2,
+      "tech_sens": 0.05,
+      "stop_loss": 0.05,
+      "take_profit": 0.1,
+      "max_days": 10,
+      "max_pos": 8,
+      "pos_pct": 0.1
+    },
+    "score": 9.093580335164159
+  },
+  {
+    "total_return": -0.012130913979099016,
+    "sharpe": -0.3240935041131599,
+    "max_dd": 0.022474711240959802,
+    "total_trades": 152,
+    "real_trades": 76,
+    "win_rate": 0.47368421052631576,
+    "profit_factor": 0.8986695698656654,
+    "avg_days": 19.842105263157894,
+    "label": "基准参数",
+    "params": {
+      "hmm_sens": 0.3,
+      "tech_sens": 0.1,
+      "stop_loss": 0.07,
+      "take_profit": 0.15,
+      "max_days": 20,
+      "max_pos": 5,
+      "pos_pct": 0.15
+    },
+    "score": 8.593812137978512
+  },
+  {
+    "total_return": -0.07192115276319405,
+    "sharpe": -3.6453882230293697,
+    "max_dd": 0.07273334313573732,
+    "total_trades": 652,
+    "real_trades": 326,
+    "win_rate": 0.4263803680981595,
+    "profit_factor": 0.5284557201304778,
+    "avg_days": 6.033742331288344,
+    "label": "极紧止损+极短持仓",
+    "params": {
+      "hmm_sens": 0.3,
+      "tech_sens": 0.05,
+      "stop_loss": 0.03,
+      "take_profit": 0.08,
+      "max_days": 5,
+      "max_pos": 10,
+      "pos_pct": 0.08
+    },
+    "score": -0.7980731590495485
+  }
+]

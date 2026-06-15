@@ -1,0 +1,269 @@
+{
+  "strategy1": {
+    "name": "多周期共振",
+    "signals": 3338,
+    "correct": 3098,
+    "accuracy": 0.9281
+  },
+  "strategy2": {
+    "strong_breakout": {
+      "signals": 208,
+      "correct": 101,
+      "accuracy": 0.4856
+    },
+    "extreme_oversold": {
+      "signals": 4,
+      "correct": 4,
+      "accuracy": 1.0
+    }
+  },
+  "strategy3": {
+    "adx_filter": {
+      "signals": 2689,
+      "correct": 2455,
+      "accuracy": 0.913
+    },
+    "vol_expansion": {
+      "signals": 324,
+      "correct": 299,
+      "accuracy": 0.9228
+    },
+    "combined": {
+      "signals": 2883,
+      "correct": 2637,
+      "accuracy": 0.9147
+    }
+  },
+  "strategy4": [
+    {
+      "threshold": 0.6,
+      "signals": 3783,
+      "correct": 3683,
+      "accuracy": 0.9736
+    },
+    {
+      "threshold": 0.65,
+      "signals": 2736,
+      "correct": 2704,
+      "accuracy": 0.9883
+    },
+    {
+      "threshold": 0.7,
+      "signals": 1794,
+      "correct": 1782,
+      "accuracy": 0.9933
+    },
+    {
+      "threshold": 0.75,
+      "signals": 1095,
+      "correct": 1092,
+      "accuracy": 0.9973
+    },
+    {
+      "threshold": 0.8,
+      "signals": 594,
+      "correct": 593,
+      "accuracy": 0.9983
+    }
+  ],
+  "strategy5_trend": {
+    "signals": 1219,
+    "correct": 1185,
+    "accuracy": 0.9721
+  },
+  "strategy5": {
+    "signals": 47,
+    "correct": 47,
+    "accuracy": 1.0
+  },
+  "rolling_oos": [
+    {
+      "window": "2021-01-01 ~ 2022-09-24",
+      "resonance_only": {
+        "signals": 125,
+        "accuracy": 0.352
+      },
+      "resonance_high_prob": {
+        "signals": 107,
+        "accuracy": 0.3458
+      },
+      "high_prob_only": {
+        "signals": 266,
+        "accuracy": 0.3534
+      }
+    },
+    {
+      "window": "2021-04-01 ~ 2022-12-23",
+      "resonance_only": {
+        "signals": 331,
+        "accuracy": 0.4592
+      },
+      "resonance_high_prob": {
+        "signals": 271,
+        "accuracy": 0.4539
+      },
+      "high_prob_only": {
+        "signals": 431,
+        "accuracy": 0.5128
+      }
+    },
+    {
+      "window": "2021-06-30 ~ 2023-03-23",
+      "resonance_only": {
+        "signals": 98,
+        "accuracy": 0.2551
+      },
+      "resonance_high_prob": {
+        "signals": 57,
+        "accuracy": 0.2105
+      },
+      "high_prob_only": {
+        "signals": 104,
+        "accuracy": 0.3173
+      }
+    },
+    {
+      "window": "2021-09-28 ~ 2023-06-21",
+      "resonance_only": {
+        "signals": 289,
+        "accuracy": 0.4325
+      },
+      "resonance_high_prob": {
+        "signals": 206,
+        "accuracy": 0.432
+      },
+      "high_prob_only": {
+        "signals": 328,
+        "accuracy": 0.4512
+      }
+    },
+    {
+      "window": "2021-12-27 ~ 2023-09-19",
+      "resonance_only": {
+        "signals": 4,
+        "accuracy": 1.0
+      },
+      "resonance_high_prob": {
+        "signals": 1,
+        "accuracy": 1.0
+      },
+      "high_prob_only": {
+        "signals": 16,
+        "accuracy": 0.75
+      }
+    },
+    {
+      "window": "2022-03-27 ~ 2023-12-18",
+      "resonance_only": {
+        "signals": 451,
+        "accuracy": 0.2727
+      },
+      "resonance_high_prob": {
+        "signals": 362,
+        "accuracy": 0.2652
+      },
+      "high_prob_only": {
+        "signals": 429,
+        "accuracy": 0.2797
+      }
+    },
+    {
+      "window": "2022-06-25 ~ 2024-03-17",
+      "resonance_only": {
+        "signals": 48,
+        "accuracy": 0.625
+      },
+      "resonance_high_prob": {
+        "signals": 38,
+        "accuracy": 0.6053
+      },
+      "high_prob_only": {
+        "signals": 74,
+        "accuracy": 0.5946
+      }
+    },
+    {
+      "window": "2022-09-23 ~ 2024-06-15",
+      "resonance_only": {
+        "signals": 236,
+        "accuracy": 0.5508
+      },
+      "resonance_high_prob": {
+        "signals": 147,
+        "accuracy": 0.619
+      },
+      "high_prob_only": {
+        "signals": 181,
+        "accuracy": 0.5801
+      }
+    },
+    {
+      "window": "2022-12-22 ~ 2024-09-13",
+      "resonance_only": {
+        "signals": 321,
+        "accuracy": 0.4517
+      },
+      "resonance_high_prob": {
+        "signals": 302,
+        "accuracy": 0.457
+      },
+      "high_prob_only": {
+        "signals": 357,
+        "accuracy": 0.4454
+      }
+    },
+    {
+      "window": "2023-03-22 ~ 2024-12-12",
+      "resonance_only": {
+        "signals": 41,
+        "accuracy": 0.7317
+      },
+      "resonance_high_prob": {
+        "signals": 19,
+        "accuracy": 0.8947
+      },
+      "high_prob_only": {
+        "signals": 95,
+        "accuracy": 0.8526
+      }
+    }
+  ],
+  "backtest": {
+    "resonance": {
+      "strategy": "resonance",
+      "trades": 3338,
+      "win_rate": 0.9281,
+      "avg_return": 0.0523,
+      "total_return": 174.4669,
+      "annual_return": 43.6167,
+      "max_drawdown": 0.0335,
+      "benchmark_total": -24.1904,
+      "benchmark_avg": -0.0013,
+      "excess_return": 198.6574
+    },
+    "resonance_hp": {
+      "strategy": "resonance_hp",
+      "trades": 2428,
+      "win_rate": 0.9765,
+      "avg_return": 0.0574,
+      "total_return": 139.3431,
+      "annual_return": 34.8358,
+      "max_drawdown": 0.0191,
+      "benchmark_total": -24.1904,
+      "benchmark_avg": -0.0013,
+      "excess_return": 163.5335
+    },
+    "resonance_trend": {
+      "strategy": "resonance_trend",
+      "trades": 1138,
+      "win_rate": 0.971,
+      "avg_return": 0.0567,
+      "total_return": 64.5576,
+      "annual_return": 16.1394,
+      "max_drawdown": 0.0345,
+      "benchmark_total": -24.1904,
+      "benchmark_avg": -0.0013,
+      "excess_return": 88.748
+    }
+  }
+}

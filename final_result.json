@@ -1,0 +1,22 @@
+{
+  "time": "2026-06-06T16:45:22.319196",
+  "config": {
+    "initial_capital": 1000000,
+    "max_positions": 3,
+    "position_size_pct": 0.2,
+    "stop_loss_pct": 0.1,
+    "take_profit_pct": 0.2,
+    "max_holding_days": 30
+  },
+  "results": {
+    "total_return": -0.04687109570289916,
+    "annual_return": -0.04687109570289916,
+    "max_drawdown": 0.0551722656105407,
+    "sharpe_ratio": -1.7117842601875002,
+    "total_trades": 62,
+    "real_trades": 31,
+    "win_rate": 0.2903225806451613,
+    "profit_factor": 0.47098075522277605
+  },
+  "all_passed": true
+}

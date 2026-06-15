@@ -9,14 +9,28 @@
 5. 组合分析
 """
 
+import json
 import logging
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 from typing import Dict, List, Optional, Tuple
 from dataclasses import dataclass, field
 from enum import Enum
 import numpy as np
 import pandas as pd
 from sqlalchemy.orm import Session
+
+class CustomEncoder(json.JSONEncoder):
+    """Custom JSON encoder for datetime and other non-serializable types"""
+    def default(self, obj):
+        if isinstance(obj, (datetime, date)):
+            return obj.isoformat()
+        from decimal import Decimal
+        if isinstance(obj, Decimal):
+            return float(obj)
+        if hasattr(obj, '__dict__'):
+            return obj.__dict__
+        return super().default(obj)
+
 
 from src.data.database import get_db, PortfolioPosition, AnalysisTask, AnalysisResult
 from src.utils.config import config
@@ -300,6 +314,21 @@ class PositionManager:
         else:
             summary.risk_level = RiskLevel.LOW
 
+        # 现金比例（假设总资金 = 持仓市值 + 现金，现金按总资金的20%估算）
+        total_assets = summary.total_market_value / 0.8 if summary.total_market_value > 0 else 0
+        summary.cash_ratio = (total_assets - summary.total_market_value) / total_assets if total_assets > 0 else 0.0
+
+        # 行业暴露
+        from src.data.database import PortfolioPosition
+        import dataclasses
+        sector_totals = {}
+        for m in metrics_list:
+            pos = self.positions.get(m.symbol)
+            sector = pos.sector if pos and hasattr(pos, 'sector') and pos.sector else '未知'
+            sector_totals[sector] = sector_totals.get(sector, 0) + m.market_value
+        if summary.total_market_value > 0:
+            summary.sector_exposure = {k: v / summary.total_market_value for k, v in sector_totals.items()}
+
         return summary
 
     def check_alerts(self, config: Optional[Dict] = None) -> List[PositionAlert]:
@@ -386,7 +415,7 @@ class PositionAnalyzer:
         # 获取数据
         end_date = datetime.now()
         start_date = end_date - timedelta(days=180)
-        df = self.data_source.get_daily_data(symbol, start_date, end_date)
+        df = self.data_source.get_kline(symbol, start_date.strftime("%Y%m%d"), end_date.strftime("%Y%m%d"))
 
         if df is None or len(df) < 60:
             return {"error": "数据不足"}
@@ -395,10 +424,10 @@ class PositionAnalyzer:
         name = position.name or symbol
 
         # Layer 1: HMM趋势定性
-        trend_result = self.hmm_engine.predict_trend(df)
+        trend_result = self.hmm_engine.analyze_trend(symbol, df)
 
         # Layer 2: 技术面信号
-        signal_report = self.technical_engine.generate_signals(df)
+        signal_report = self.technical_engine.generate_signal(symbol, df, trend_result)
 
         # Layer 3: AI辩论
         debate_result = self.debate_engine.debate(symbol, trend_result, signal_report)
@@ -430,7 +459,7 @@ class PositionAnalyzer:
             'layer1_trend': trend_result,
             'layer2_signal': signal_report,
             'layer3_debate': debate_result,
-            'forecast': forecast.to_dict(),
+            'forecast': dataclasses.asdict(forecast),
             'position_analysis': position_analysis
         }
 
@@ -509,10 +538,10 @@ class ReviewScheduler:
             task_type='review',
             status='pending',
             scheduled_at=review_date,
-            parameters={
+            parameters=json.dumps({
                 'prediction_date': prediction_date.isoformat(),
                 'prediction_data': prediction_data
-            }
+            }, ensure_ascii=False, cls=CustomEncoder)
         )
 
         self.db.add(task)
@@ -536,7 +565,7 @@ class ReviewScheduler:
                         position_manager: PositionManager):
         """执行单个复核"""
         symbol = task.symbol
-        params = task.parameters or {}
+        params = json.loads(task.parameters) if task.parameters else {}
         prediction_data = params.get('prediction_data', {})
 
         # 获取实际数据

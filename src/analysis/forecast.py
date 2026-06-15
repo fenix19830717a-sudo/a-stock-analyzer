@@ -164,13 +164,28 @@ class ForecastReportGenerator:
     
     def _calculate_overall_confidence(self, trend_qualification: Dict,
                                      signal_report: Dict, debate_result: Dict) -> float:
-        """计算综合准确率"""
+        """计算综合准确率 - 从辩论结果中提取真实置信度"""
         hmm_conf = trend_qualification.get('confidence', 50)
         factor_prob = signal_report.get('probability', 50)
-        
+
+        # 从辩论结果中提取Layer 3置信度
+        final_decision = debate_result.get('final_decision', {})
+        bull_score = final_decision.get('bull_score', 0)
+        bear_score = final_decision.get('bear_score', 0)
+        if bull_score > 0 or bear_score > 0:
+            # 根据多头/空头得分计算置信度
+            total_score = bull_score + bear_score
+            if total_score > 0:
+                debate_conf = (bull_score / total_score) * 100
+            else:
+                debate_conf = 60
+        else:
+            # 如果没有得分数据，使用默认值60
+            debate_conf = 60
+
         # 综合三层置信度
-        overall = (hmm_conf * 0.3 + factor_prob * 0.4 + 60 * 0.3)
-        
+        overall = (hmm_conf * 0.3 + factor_prob * 0.4 + debate_conf * 0.3)
+
         return round(overall, 1)
     
     def _generate_recommendation(self, debate_result: Dict) -> str:
@@ -205,16 +220,40 @@ class ForecastReportGenerator:
         return risks
     
     def _get_key_factors(self, trend_qualification: Dict, day: int) -> List[str]:
-        """获取关键因子"""
+        """获取关键因子 - 从trend_qualification中提取真实因子信息"""
         factors = []
-        
+
+        # 从趋势定性中提取趋势方向和强度
+        trend_direction = trend_qualification.get('trend_direction', '')
+        trend_strength = trend_qualification.get('trend_strength', '')
+
+        if trend_direction:
+            factors.append(f"趋势方向: {trend_direction}")
+        if trend_strength:
+            factors.append(f"趋势强度: {trend_strength}")
+
+        # 从趋势定性的regime信息中提取
+        regime = trend_qualification.get('regime', '')
+        if regime:
+            factors.append(f"市场状态: {regime}")
+
+        # 从置信度提取
+        confidence = trend_qualification.get('confidence', 0)
+        if confidence:
+            factors.append(f"HMM置信度: {confidence}%")
+
+        # 根据天数添加时间相关因子
         if day == 1:
-            factors.append('均线支撑')
+            factors.append("短期: 均线支撑/压力位")
         elif day == 2:
-            factors.append('行业利好')
+            factors.append("中期: 成交量变化/行业轮动")
         else:
+            factors.append("长期: 趋势延续/反转信号")
+
+        # 如果没有提取到任何因子，返回默认值
+        if not factors:
             factors.append('趋势延续')
-        
+
         return factors
     
     def _summarize_layer1(self, trend_qualification: Dict) -> str:

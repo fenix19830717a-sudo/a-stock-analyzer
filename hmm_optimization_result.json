@@ -1,0 +1,252 @@
+{
+  "feature_engineering": {
+    "baseline_accuracy": 56.57,
+    "enhanced_accuracy": 57.8,
+    "improvement": 1.22,
+    "baseline_n_features": "~20",
+    "enhanced_n_features": "~50",
+    "per_window": {
+      "baseline": [
+        55.51,
+        53.08,
+        59.57,
+        59.68,
+        57.07,
+        57.98,
+        55.47,
+        54.24
+      ],
+      "enhanced": [
+        55.76,
+        57.12,
+        58.77,
+        59.58,
+        57.84,
+        58.39,
+        59.48,
+        55.42
+      ]
+    }
+  },
+  "label_optimization": {
+    "per_label": {
+      "1d": {
+        "accuracy": 56.57,
+        "state_discrimination": 0.5684
+      },
+      "3d": {
+        "accuracy": 53.62,
+        "state_discrimination": 0.4045
+      },
+      "5d": {
+        "accuracy": 53.32,
+        "state_discrimination": 0.4525
+      },
+      "10d": {
+        "accuracy": 53.52,
+        "state_discrimination": 0.5325
+      }
+    },
+    "best_label": "1d"
+  },
+  "hyperparameter": {
+    "results": {
+      "n3_diag_i500": {
+        "accuracy": 56.73,
+        "convergence_rate": 100.0,
+        "n_success": 160,
+        "n_total": 160
+      },
+      "n3_diag_i1000": {
+        "accuracy": 56.73,
+        "convergence_rate": 100.0,
+        "n_success": 160,
+        "n_total": 160
+      },
+      "n3_full_i500": {
+        "accuracy": 55.9,
+        "convergence_rate": 19.38,
+        "n_success": 31,
+        "n_total": 160
+      },
+      "n3_full_i1000": {
+        "accuracy": 55.9,
+        "convergence_rate": 19.38,
+        "n_success": 31,
+        "n_total": 160
+      },
+      "n5_diag_i500": {
+        "accuracy": 56.54,
+        "convergence_rate": 95.62,
+        "n_success": 153,
+        "n_total": 160
+      },
+      "n5_diag_i1000": {
+        "accuracy": 56.54,
+        "convergence_rate": 95.62,
+        "n_success": 153,
+        "n_total": 160
+      },
+      "n5_full_i500": {
+        "accuracy": 55.31,
+        "convergence_rate": 17.5,
+        "n_success": 28,
+        "n_total": 160
+      },
+      "n5_full_i1000": {
+        "accuracy": 55.31,
+        "convergence_rate": 17.5,
+        "n_success": 28,
+        "n_total": 160
+      },
+      "n7_diag_i500": {
+        "accuracy": 56.45,
+        "convergence_rate": 98.12,
+        "n_success": 157,
+        "n_total": 160
+      },
+      "n7_diag_i1000": {
+        "accuracy": 56.45,
+        "convergence_rate": 98.12,
+        "n_success": 157,
+        "n_total": 160
+      },
+      "n7_full_i500": {
+        "accuracy": 55.36,
+        "convergence_rate": 14.37,
+        "n_success": 23,
+        "n_total": 160
+      },
+      "n7_full_i1000": {
+        "accuracy": 55.36,
+        "convergence_rate": 14.37,
+        "n_success": 23,
+        "n_total": 160
+      }
+    },
+    "best": "n3_diag_i500",
+    "best_accuracy": 56.73
+  },
+  "normalization": {
+    "no_normalization_accuracy": 56.57,
+    "zscore_accuracy": 60.39,
+    "improvement": 3.81
+  },
+  "threshold_optimization": {
+    "results": {
+      "buy0.5_sell0.4": {
+        "total_return": 72.76,
+        "sharpe": 0.95,
+        "max_drawdown": -63.89,
+        "win_rate": 44.59,
+        "profit_loss_ratio": 1.54,
+        "n_trades": 231
+      },
+      "buy0.5_sell0.45": {
+        "total_return": 72.76,
+        "sharpe": 0.95,
+        "max_drawdown": -63.89,
+        "win_rate": 44.59,
+        "profit_loss_ratio": 1.54,
+        "n_trades": 231
+      },
+      "buy0.5_sell0.5": {
+        "total_return": 72.76,
+        "sharpe": 0.95,
+        "max_drawdown": -63.89,
+        "win_rate": 44.59,
+        "profit_loss_ratio": 1.54,
+        "n_trades": 231
+      },
+      "buy0.55_sell0.4": {
+        "total_return": 33.28,
+        "sharpe": 0.9,
+        "max_drawdown": -70.51,
+        "win_rate": 37.93,
+        "profit_loss_ratio": 1.65,
+        "n_trades": 203
+      },
+      "buy0.55_sell0.45": {
+        "total_return": 33.28,
+        "sharpe": 0.9,
+        "max_drawdown": -70.51,
+        "win_rate": 37.93,
+        "profit_loss_ratio": 1.65,
+        "n_trades": 203
+      },
+      "buy0.55_sell0.5": {
+        "total_return": 33.28,
+        "sharpe": 0.9,
+        "max_drawdown": -70.51,
+        "win_rate": 37.93,
+        "profit_loss_ratio": 1.65,
+        "n_trades": 203
+      },
+      "buy0.6_sell0.4": {
+        "total_return": 42.2,
+        "sharpe": 1.03,
+        "max_drawdown": -70.94,
+        "win_rate": 43.07,
+        "profit_loss_ratio": 1.42,
+        "n_trades": 202
+      },
+      "buy0.6_sell0.45": {
+        "total_return": 42.2,
+        "sharpe": 1.03,
+        "max_drawdown": -70.94,
+        "win_rate": 43.07,
+        "profit_loss_ratio": 1.42,
+        "n_trades": 202
+      },
+      "buy0.6_sell0.5": {
+        "total_return": 42.2,
+        "sharpe": 1.03,
+        "max_drawdown": -70.94,
+        "win_rate": 43.07,
+        "profit_loss_ratio": 1.42,
+        "n_trades": 202
+      }
+    },
+    "best": "buy0.5_sell0.4",
+    "best_return": 72.76
+  },
+  "final_comparison": {
+    "baseline": {
+      "total_return": 72.76,
+      "sharpe": 0.95,
+      "max_drawdown": -63.89,
+      "win_rate": 44.59,
+      "profit_loss_ratio": 1.54,
+      "n_trades": 231
+    },
+    "optimized": {
+      "total_return": -27.71,
+      "sharpe": 0.55,
+      "max_drawdown": -66.8,
+      "win_rate": 40.12,
+      "profit_loss_ratio": 1.29,
+      "n_trades": 172
+    },
+    "best_config": {
+      "n_components": 3,
+      "covariance_type": "diag",
+      "n_iter": 500,
+      "label_forward_days": 1,
+      "buy_threshold": 0.5,
+      "sell_threshold": 0.4,
+      "feature_set": "enhanced",
+      "normalization": "zscore"
+    }
+  },
+  "summary": {
+    "test_period": "2022-01-01 ~ 2024-12-31",
+    "n_stocks": 20,
+    "n_windows": 8,
+    "elapsed_seconds": 432.3,
+    "improvements": {
+      "feature_engineering": 1.22,
+      "normalization": 3.81,
+      "return_improvement": -100.47
+    }
+  }
+}

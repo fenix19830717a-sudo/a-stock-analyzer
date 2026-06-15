@@ -1,0 +1,1112 @@
+{
+  "backtest_name": "三层决策回测 (HMM+技术+辩论)",
+  "date": "2026-06-09 21:50",
+  "backtest_period": "2024-01-01 ~ 2026-06-05",
+  "data_range": "2024-01-02 ~ 2026-06-05",
+  "trading_days": 585,
+  "total_stocks": 700,
+  "params": {
+    "initial_capital": 1000000,
+    "stop_loss": 0.1,
+    "take_profit": 0.15,
+    "max_holding_days": 10,
+    "max_positions": 8,
+    "position_size": 0.15,
+    "buy_threshold": 0.4,
+    "sell_threshold": 0.35,
+    "min_score": 50,
+    "rebalance_freq": 5,
+    "commission": 0.0003,
+    "stamp_tax": 0.001
+  },
+  "results": {
+    "initial_capital": 1000000,
+    "final_capital": 1282808.18,
+    "total_return": 0.2828,
+    "annual_return": 0.1133,
+    "max_drawdown": -0.1,
+    "sharpe_ratio": 0.83,
+    "total_trades": 866,
+    "sell_trades": 425,
+    "win_rate": 0.4847,
+    "profit_factor": 1.5,
+    "avg_holding_days": 9.8
+  },
+  "exit_reasons": {
+    "超时": 372,
+    "止盈": 25,
+    "止损": 27,
+    "信号反转": 1,
+    "回测结束": 8
+  },
+  "equity_curve": [
+    {
+      "date": "2024-01-02",
+      "equity": 1000000
+    },
+    {
+      "date": "2024-01-09",
+      "equity": 1000000
+    },
+    {
+      "date": "2024-01-16",
+      "equity": 1000000
+    },
+    {
+      "date": "2024-01-23",
+      "equity": 1000000
+    },
+    {
+      "date": "2024-01-30",
+      "equity": 1000000
+    },
+    {
+      "date": "2024-02-06",
+      "equity": 1000000
+    },
+    {
+      "date": "2024-02-21",
+      "equity": 1000000
+    },
+    {
+      "date": "2024-02-28",
+      "equity": 1000000
+    },
+    {
+      "date": "2024-03-06",
+      "equity": 1000000
+    },
+    {
+      "date": "2024-03-13",
+      "equity": 1000000
+    },
+    {
+      "date": "2024-03-20",
+      "equity": 1000000
+    },
+    {
+      "date": "2024-03-27",
+      "equity": 1000000
+    },
+    {
+      "date": "2024-04-03",
+      "equity": 1000000
+    },
+    {
+      "date": "2024-04-12",
+      "equity": 991239.74
+    },
+    {
+      "date": "2024-04-19",
+      "equity": 1004969.68
+    },
+    {
+      "date": "2024-04-26",
+      "equity": 991973.55
+    },
+    {
+      "date": "2024-05-08",
+      "equity": 1000792.8
+    },
+    {
+      "date": "2024-05-15",
+      "equity": 1004533.77
+    },
+    {
+      "date": "2024-05-22",
+      "equity": 1001545.95
+    },
+    {
+      "date": "2024-05-29",
+      "equity": 1010199.93
+    },
+    {
+      "date": "2024-06-05",
+      "equity": 1016689.48
+    },
+    {
+      "date": "2024-06-13",
+      "equity": 1002219.67
+    },
+    {
+      "date": "2024-06-20",
+      "equity": 1013567.03
+    },
+    {
+      "date": "2024-06-27",
+      "equity": 983324.26
+    },
+    {
+      "date": "2024-07-04",
+      "equity": 978631.49
+    },
+    {
+      "date": "2024-07-11",
+      "equity": 1016790.96
+    },
+    {
+      "date": "2024-07-18",
+      "equity": 1033191.12
+    },
+    {
+      "date": "2024-07-25",
+      "equity": 1028342.57
+    },
+    {
+      "date": "2024-08-01",
+      "equity": 1023421.9
+    },
+    {
+      "date": "2024-08-08",
+      "equity": 997106.98
+    },
+    {
+      "date": "2024-08-15",
+      "equity": 989655.18
+    },
+    {
+      "date": "2024-08-22",
+      "equity": 983312.37
+    },
+    {
+      "date": "2024-08-29",
+      "equity": 978280.51
+    },
+    {
+      "date": "2024-09-05",
+      "equity": 979023.29
+    },
+    {
+      "date": "2024-09-12",
+      "equity": 945814.4
+    },
+    {
+      "date": "2024-09-23",
+      "equity": 934810.39
+    },
+    {
+      "date": "2024-09-30",
+      "equity": 1079426.03
+    },
+    {
+      "date": "2024-10-14",
+      "equity": 1050435.29
+    },
+    {
+      "date": "2024-10-21",
+      "equity": 1031861.42
+    },
+    {
+      "date": "2024-10-28",
+      "equity": 1027067.34
+    },
+    {
+      "date": "2024-11-04",
+      "equity": 1051974.87
+    },
+    {
+      "date": "2024-11-11",
+      "equity": 1101430.71
+    },
+    {
+      "date": "2024-11-18",
+      "equity": 1064334.19
+    },
+    {
+      "date": "2024-11-25",
+      "equity": 1065282.97
+    },
+    {
+      "date": "2024-12-02",
+      "equity": 1078875.89
+    },
+    {
+      "date": "2024-12-09",
+      "equity": 1068937.93
+    },
+    {
+      "date": "2024-12-16",
+      "equity": 1061137.14
+    },
+    {
+      "date": "2024-12-23",
+      "equity": 1051592.2
+    },
+    {
+      "date": "2024-12-30",
+      "equity": 1052183.7
+    },
+    {
+      "date": "2025-01-07",
+      "equity": 1020063.96
+    },
+    {
+      "date": "2025-01-14",
+      "equity": 1017880.82
+    },
+    {
+      "date": "2025-01-21",
+      "equity": 1016311.09
+    },
+    {
+      "date": "2025-02-05",
+      "equity": 1043858.05
+    },
+    {
+      "date": "2025-02-12",
+      "equity": 1053203.63
+    },
+    {
+      "date": "2025-02-19",
+      "equity": 1035225.35
+    },
+    {
+      "date": "2025-02-26",
+      "equity": 1054106.01
+    },
+    {
+      "date": "2025-03-05",
+      "equity": 1038908.15
+    },
+    {
+      "date": "2025-03-12",
+      "equity": 1050279.87
+    },
+    {
+      "date": "2025-03-19",
+      "equity": 1065339.99
+    },
+    {
+      "date": "2025-03-26",
+      "equity": 1069486.84
+    },
+    {
+      "date": "2025-04-02",
+      "equity": 1076759.02
+    },
+    {
+      "date": "2025-04-10",
+      "equity": 1057561.56
+    },
+    {
+      "date": "2025-04-17",
+      "equity": 1071252.18
+    },
+    {
+      "date": "2025-04-24",
+      "equity": 1065217.0
+    },
+    {
+      "date": "2025-05-06",
+      "equity": 1072800.07
+    },
+    {
+      "date": "2025-05-13",
+      "equity": 1078396.91
+    },
+    {
+      "date": "2025-05-20",
+      "equity": 1074857.72
+    },
+    {
+      "date": "2025-05-27",
+      "equity": 1058927.85
+    },
+    {
+      "date": "2025-06-04",
+      "equity": 1067687.74
+    },
+    {
+      "date": "2025-06-11",
+      "equity": 1070938.94
+    },
+    {
+      "date": "2025-06-18",
+      "equity": 1091273.35
+    },
+    {
+      "date": "2025-06-25",
+      "equity": 1115726.37
+    },
+    {
+      "date": "2025-07-02",
+      "equity": 1098753.94
+    },
+    {
+      "date": "2025-07-09",
+      "equity": 1100109.99
+    },
+    {
+      "date": "2025-07-16",
+      "equity": 1101463.64
+    },
+    {
+      "date": "2025-07-23",
+      "equity": 1134583.38
+    },
+    {
+      "date": "2025-07-30",
+      "equity": 1166959.98
+    },
+    {
+      "date": "2025-08-06",
+      "equity": 1162330.9
+    },
+    {
+      "date": "2025-08-13",
+      "equity": 1176613.08
+    },
+    {
+      "date": "2025-08-20",
+      "equity": 1193375.95
+    },
+    {
+      "date": "2025-08-27",
+      "equity": 1208393.91
+    },
+    {
+      "date": "2025-09-03",
+      "equity": 1206941.34
+    },
+    {
+      "date": "2025-09-10",
+      "equity": 1202797.35
+    },
+    {
+      "date": "2025-09-17",
+      "equity": 1201298.94
+    },
+    {
+      "date": "2025-09-24",
+      "equity": 1191977.77
+    },
+    {
+      "date": "2025-10-09",
+      "equity": 1247454.9
+    },
+    {
+      "date": "2025-10-16",
+      "equity": 1197082.35
+    },
+    {
+      "date": "2025-10-23",
+      "equity": 1180188.24
+    },
+    {
+      "date": "2025-10-30",
+      "equity": 1194181.4
+    },
+    {
+      "date": "2025-11-06",
+      "equity": 1201330.65
+    },
+    {
+      "date": "2025-11-13",
+      "equity": 1211701.53
+    },
+    {
+      "date": "2025-11-20",
+      "equity": 1181440.33
+    },
+    {
+      "date": "2025-11-27",
+      "equity": 1165072.64
+    },
+    {
+      "date": "2025-12-04",
+      "equity": 1165986.49
+    },
+    {
+      "date": "2025-12-11",
+      "equity": 1164275.19
+    },
+    {
+      "date": "2025-12-18",
+      "equity": 1163945.98
+    },
+    {
+      "date": "2025-12-25",
+      "equity": 1172915.98
+    },
+    {
+      "date": "2026-01-05",
+      "equity": 1177623.54
+    },
+    {
+      "date": "2026-01-12",
+      "equity": 1216380.51
+    },
+    {
+      "date": "2026-01-19",
+      "equity": 1253772.55
+    },
+    {
+      "date": "2026-01-26",
+      "equity": 1258848.7
+    },
+    {
+      "date": "2026-02-02",
+      "equity": 1226591.16
+    },
+    {
+      "date": "2026-02-09",
+      "equity": 1268269.24
+    },
+    {
+      "date": "2026-02-24",
+      "equity": 1269410.92
+    },
+    {
+      "date": "2026-03-03",
+      "equity": 1354482.9
+    },
+    {
+      "date": "2026-03-10",
+      "equity": 1369702.02
+    },
+    {
+      "date": "2026-03-17",
+      "equity": 1344398.66
+    },
+    {
+      "date": "2026-03-24",
+      "equity": 1343038.84
+    },
+    {
+      "date": "2026-03-31",
+      "equity": 1303034.94
+    },
+    {
+      "date": "2026-04-08",
+      "equity": 1309792.79
+    },
+    {
+      "date": "2026-04-15",
+      "equity": 1272169.51
+    },
+    {
+      "date": "2026-04-22",
+      "equity": 1298274.53
+    },
+    {
+      "date": "2026-04-29",
+      "equity": 1313909.12
+    },
+    {
+      "date": "2026-05-11",
+      "equity": 1335570.48
+    },
+    {
+      "date": "2026-05-18",
+      "equity": 1298128.42
+    },
+    {
+      "date": "2026-05-25",
+      "equity": 1308949.78
+    },
+    {
+      "date": "2026-06-01",
+      "equity": 1296840.19
+    }
+  ],
+  "trades_sample": [
+    {
+      "date": "2024-04-03",
+      "code": "600010",
+      "name": "包钢股份",
+      "action": "BUY",
+      "price": 1.67,
+      "shares": 89800,
+      "up_prob": 0.5,
+      "comp_score": 90,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-04-03",
+      "code": "600489",
+      "name": "中金黄金",
+      "action": "BUY",
+      "price": 12.82,
+      "shares": 9900,
+      "up_prob": 0.5,
+      "comp_score": 70,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-04-03",
+      "code": "600026",
+      "name": "中远海能",
+      "action": "BUY",
+      "price": 16.45,
+      "shares": 6500,
+      "up_prob": 0.5,
+      "comp_score": 70,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-04-03",
+      "code": "000651",
+      "name": "格力电器",
+      "action": "BUY",
+      "price": 34.86,
+      "shares": 2600,
+      "up_prob": 0.5,
+      "comp_score": 85,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-04-03",
+      "code": "000338",
+      "name": "潍柴动力",
+      "action": "BUY",
+      "price": 16.19,
+      "shares": 4800,
+      "up_prob": 0.5,
+      "comp_score": 70,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-04-03",
+      "code": "601919",
+      "name": "中远海控",
+      "action": "BUY",
+      "price": 9.07,
+      "shares": 7400,
+      "up_prob": 0.5,
+      "comp_score": 95,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-04-03",
+      "code": "688187",
+      "name": "时代电气",
+      "action": "BUY",
+      "price": 45.34,
+      "shares": 1200,
+      "up_prob": 0.5,
+      "comp_score": 70,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-04-03",
+      "code": "600919",
+      "name": "江苏银行",
+      "action": "BUY",
+      "price": 6.85,
+      "shares": 7100,
+      "up_prob": 0.5,
+      "comp_score": 65,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-04-19",
+      "code": "600010",
+      "name": "包钢股份",
+      "action": "SELL",
+      "price": 1.62,
+      "entry_price": 1.67,
+      "shares": 89800,
+      "pnl_pct": -2.99,
+      "pnl_amount": -4533.64,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-04-19",
+      "code": "600489",
+      "name": "中金黄金",
+      "action": "SELL",
+      "price": 12.8,
+      "entry_price": 12.82,
+      "shares": 9900,
+      "pnl_pct": -0.15,
+      "pnl_amount": -226.57,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-04-19",
+      "code": "600026",
+      "name": "中远海能",
+      "action": "SELL",
+      "price": 15.91,
+      "entry_price": 16.45,
+      "shares": 6500,
+      "pnl_pct": -3.31,
+      "pnl_amount": -3571.28,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-04-19",
+      "code": "000651",
+      "name": "格力电器",
+      "action": "SELL",
+      "price": 34.49,
+      "entry_price": 34.86,
+      "shares": 2600,
+      "pnl_pct": -1.07,
+      "pnl_amount": -992.29,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-04-19",
+      "code": "000338",
+      "name": "潍柴动力",
+      "action": "SELL",
+      "price": 16.85,
+      "entry_price": 16.19,
+      "shares": 4800,
+      "pnl_pct": 4.05,
+      "pnl_amount": 3125.25,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-04-19",
+      "code": "601919",
+      "name": "中远海控",
+      "action": "SELL",
+      "price": 9.41,
+      "entry_price": 9.07,
+      "shares": 7400,
+      "pnl_pct": 3.78,
+      "pnl_amount": 2517.05,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-04-19",
+      "code": "688187",
+      "name": "时代电气",
+      "action": "SELL",
+      "price": 51.29,
+      "entry_price": 45.34,
+      "shares": 1200,
+      "pnl_pct": 13.14,
+      "pnl_amount": 7128.9,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-04-19",
+      "code": "600919",
+      "name": "江苏银行",
+      "action": "SELL",
+      "price": 7.07,
+      "entry_price": 6.85,
+      "shares": 7100,
+      "pnl_pct": 3.16,
+      "pnl_amount": 1520.7,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-04-19",
+      "code": "000338",
+      "name": "潍柴动力",
+      "action": "BUY",
+      "price": 16.85,
+      "shares": 8900,
+      "up_prob": 0.5,
+      "comp_score": 70,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-04-19",
+      "code": "600000",
+      "name": "浦发银行",
+      "action": "BUY",
+      "price": 6.87,
+      "shares": 18600,
+      "up_prob": 0.5,
+      "comp_score": 75,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-04-19",
+      "code": "601319",
+      "name": "中国人保",
+      "action": "BUY",
+      "price": 5.05,
+      "shares": 21600,
+      "up_prob": 0.5,
+      "comp_score": 80,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-04-19",
+      "code": "600900",
+      "name": "长江电力",
+      "action": "BUY",
+      "price": 24.33,
+      "shares": 3800,
+      "up_prob": 0.5,
+      "comp_score": 80,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-04-19",
+      "code": "601898",
+      "name": "中煤能源",
+      "action": "BUY",
+      "price": 11.4,
+      "shares": 6900,
+      "up_prob": 0.5,
+      "comp_score": 70,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-04-19",
+      "code": "600104",
+      "name": "上汽集团",
+      "action": "BUY",
+      "price": 14.74,
+      "shares": 4500,
+      "up_prob": 0.5,
+      "comp_score": 65,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-04-19",
+      "code": "601919",
+      "name": "中远海控",
+      "action": "BUY",
+      "price": 9.41,
+      "shares": 6000,
+      "up_prob": 0.5,
+      "comp_score": 75,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-04-19",
+      "code": "600489",
+      "name": "中金黄金",
+      "action": "BUY",
+      "price": 12.8,
+      "shares": 3700,
+      "up_prob": 0.5,
+      "comp_score": 70,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-05-08",
+      "code": "000338",
+      "name": "潍柴动力",
+      "action": "SELL",
+      "price": 15.7,
+      "entry_price": 16.85,
+      "shares": 8900,
+      "pnl_pct": -6.81,
+      "pnl_amount": -10261.46,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-05-08",
+      "code": "600000",
+      "name": "浦发银行",
+      "action": "SELL",
+      "price": 7.3,
+      "entry_price": 6.87,
+      "shares": 18600,
+      "pnl_pct": 6.27,
+      "pnl_amount": 7969.47,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-05-08",
+      "code": "601319",
+      "name": "中国人保",
+      "action": "SELL",
+      "price": 4.97,
+      "entry_price": 5.05,
+      "shares": 21600,
+      "pnl_pct": -1.49,
+      "pnl_amount": -1658.9,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-05-08",
+      "code": "600900",
+      "name": "长江电力",
+      "action": "SELL",
+      "price": 23.69,
+      "entry_price": 24.33,
+      "shares": 3800,
+      "pnl_pct": -2.65,
+      "pnl_amount": -2480.66,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-05-08",
+      "code": "601898",
+      "name": "中煤能源",
+      "action": "SELL",
+      "price": 11.28,
+      "entry_price": 11.4,
+      "shares": 6900,
+      "pnl_pct": -1.04,
+      "pnl_amount": -841.01,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-05-08",
+      "code": "600104",
+      "name": "上汽集团",
+      "action": "SELL",
+      "price": 14.08,
+      "entry_price": 14.74,
+      "shares": 4500,
+      "pnl_pct": -4.46,
+      "pnl_amount": -2979.63,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-05-08",
+      "code": "601919",
+      "name": "中远海控",
+      "action": "SELL",
+      "price": 10.47,
+      "entry_price": 9.41,
+      "shares": 6000,
+      "pnl_pct": 11.2,
+      "pnl_amount": 6308.89,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-05-08",
+      "code": "600489",
+      "name": "中金黄金",
+      "action": "SELL",
+      "price": 12.8,
+      "entry_price": 12.8,
+      "shares": 3700,
+      "pnl_pct": 0.0,
+      "pnl_amount": -14.21,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-05-08",
+      "code": "000999",
+      "name": "华润三九",
+      "action": "BUY",
+      "price": 32.79,
+      "shares": 4500,
+      "up_prob": 0.5,
+      "comp_score": 70,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-05-08",
+      "code": "000651",
+      "name": "格力电器",
+      "action": "BUY",
+      "price": 36.44,
+      "shares": 3500,
+      "up_prob": 0.5,
+      "comp_score": 80,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-05-08",
+      "code": "600460",
+      "name": "士兰微",
+      "action": "BUY",
+      "price": 19.42,
+      "shares": 5600,
+      "up_prob": 0.5,
+      "comp_score": 85,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-05-08",
+      "code": "600000",
+      "name": "浦发银行",
+      "action": "BUY",
+      "price": 7.3,
+      "shares": 12600,
+      "up_prob": 0.5,
+      "comp_score": 70,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-05-08",
+      "code": "600584",
+      "name": "长电科技",
+      "action": "BUY",
+      "price": 26.0,
+      "shares": 3000,
+      "up_prob": 0.5,
+      "comp_score": 85,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-05-08",
+      "code": "605117",
+      "name": "德业股份",
+      "action": "BUY",
+      "price": 30.84,
+      "shares": 2100,
+      "up_prob": 0.5,
+      "comp_score": 80,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-05-08",
+      "code": "600415",
+      "name": "小商品城",
+      "action": "BUY",
+      "price": 8.07,
+      "shares": 7000,
+      "up_prob": 0.5,
+      "comp_score": 85,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-05-08",
+      "code": "603019",
+      "name": "中科曙光",
+      "action": "BUY",
+      "price": 45.46,
+      "shares": 1000,
+      "up_prob": 0.5,
+      "comp_score": 85,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-05-22",
+      "code": "000999",
+      "name": "华润三九",
+      "action": "SELL",
+      "price": 32.25,
+      "entry_price": 32.79,
+      "shares": 4500,
+      "pnl_pct": -1.64,
+      "pnl_amount": -2466.66,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-05-22",
+      "code": "000651",
+      "name": "格力电器",
+      "action": "SELL",
+      "price": 35.89,
+      "entry_price": 36.44,
+      "shares": 3500,
+      "pnl_pct": -1.52,
+      "pnl_amount": -1971.92,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-05-22",
+      "code": "600460",
+      "name": "士兰微",
+      "action": "SELL",
+      "price": 18.7,
+      "entry_price": 19.42,
+      "shares": 5600,
+      "pnl_pct": -3.7,
+      "pnl_amount": -4056.9,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-05-22",
+      "code": "600000",
+      "name": "浦发银行",
+      "action": "SELL",
+      "price": 7.99,
+      "entry_price": 7.3,
+      "shares": 12600,
+      "pnl_pct": 9.36,
+      "pnl_amount": 8581.08,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-05-22",
+      "code": "600584",
+      "name": "长电科技",
+      "action": "SELL",
+      "price": 25.83,
+      "entry_price": 26.0,
+      "shares": 3000,
+      "pnl_pct": -0.65,
+      "pnl_amount": -529.36,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-05-22",
+      "code": "605117",
+      "name": "德业股份",
+      "action": "SELL",
+      "price": 33.2,
+      "entry_price": 30.84,
+      "shares": 2100,
+      "pnl_pct": 7.68,
+      "pnl_amount": 4953.72,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-05-22",
+      "code": "600415",
+      "name": "小商品城",
+      "action": "SELL",
+      "price": 7.88,
+      "entry_price": 8.07,
+      "shares": 7000,
+      "pnl_pct": -2.37,
+      "pnl_amount": -1356.88,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-05-22",
+      "code": "603019",
+      "name": "中科曙光",
+      "action": "SELL",
+      "price": 43.29,
+      "entry_price": 45.46,
+      "shares": 1000,
+      "pnl_pct": -4.77,
+      "pnl_amount": -2182.99,
+      "hold_days": 10,
+      "reason": "timeout"
+    },
+    {
+      "date": "2024-05-22",
+      "code": "000792",
+      "name": "盐湖股份",
+      "action": "BUY",
+      "price": 17.93,
+      "shares": 8300,
+      "up_prob": 0.5,
+      "comp_score": 70,
+      "reason": "hmm+signal+debate"
+    },
+    {
+      "date": "2024-05-22",
+      "code": "000999",
+      "name": "华润三九",
+      "action": "BUY",
+      "price": 32.25,
+      "shares": 3900,
+      "up_prob": 0.5,
+      "comp_score": 85,
+      "reason": "hmm+signal+debate"
+    }
+  ]
+}

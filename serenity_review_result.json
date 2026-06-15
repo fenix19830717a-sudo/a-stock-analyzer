@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-06-08 01:23:56",
+  "evaluation": {
+    "signal_consistency": {
+      "3层一致": {
+        "win_rate": 62.2,
+        "count": 74,
+        "avg_pnl": 2.9
+      },
+      "2层一致": {
+        "win_rate": 58.8,
+        "count": 68,
+        "avg_pnl": 1.77
+      },
+      "1层一致": {
+        "win_rate": 0,
+        "count": 0,
+        "avg_pnl": 0
+      },
+      "0层一致": {
+        "win_rate": 0,
+        "count": 0,
+        "avg_pnl": 0
+      }
+    },
+    "trend_strength": {
+      "强": {
+        "win_rate": 60.6,
+        "count": 142
+      },
+      "中": {
+        "win_rate": 0,
+        "count": 0
+      },
+      "弱": {
+        "win_rate": 0,
+        "count": 0
+      }
+    },
+    "stop_loss_discipline": {
+      "stop_loss_count": 22,
+      "checked_count": 22,
+      "continue_drop_pct": 77.3,
+      "rebound_pct": 22.7
+    },
+    "frequency_quality": {
+      "avg_monthly_trades": 7.9,
+      "high_freq_months": 0,
+      "high_freq_avg_win_rate": 0,
+      "low_freq_months": 18,
+      "low_freq_avg_win_rate": 57.3,
+      "monthly_detail": {
+        "2025-01": {
+          "count": 5,
+          "win_rate": 40.0
+        },
+        "2025-02": {
+          "count": 7,
+          "win_rate": 71.4
+        },
+        "2025-03": {
+          "count": 5,
+          "win_rate": 80.0
+        },
+        "2025-04": {
+          "count": 5,
+          "win_rate": 20.0
+        },
+        "2025-05": {
+          "count": 4,
+          "win_rate": 50.0
+        },
+        "2025-06": {
+          "count": 2,
+          "win_rate": 50.0
+        },
+        "2025-07": {
+          "count": 11,
+          "win_rate": 63.6
+        },
+        "2025-08": {
+          "count": 10,
+          "win_rate": 80.0
+        },
+        "2025-09": {
+          "count": 11,
+          "win_rate": 54.5
+        },
+        "2025-10": {
+          "count": 8,
+          "win_rate": 37.5
+        },
+        "2025-11": {
+          "count": 3,
+          "win_rate": 33.3
+        },
+        "2025-12": {
+          "count": 11,
+          "win_rate": 72.7
+        },
+        "2026-01": {
+          "count": 11,
+          "win_rate": 63.6
+        },
+        "2026-02": {
+          "count": 8,
+          "win_rate": 87.5
+        },
+        "2026-03": {
+          "count": 14,
+          "win_rate": 64.3
+        },
+        "2026-04": {
+          "count": 12,
+          "win_rate": 66.7
+        },
+        "2026-05": {
+          "count": 13,
+          "win_rate": 46.2
+        },
+        "2026-06": {
+          "count": 2,
+          "win_rate": 50.0
+        }
+      }
+    },
+    "consecutive_behavior": {
+      "after_3_losses_count": 9,
+      "after_3_losses_win_rate": 55.6,
+      "after_3_wins_count": 29,
+      "after_3_wins_win_rate": 58.6
+    }
+  },
+  "backtest_comparison": {
+    "scheme_C_baseline": {
+      "total_return": 49.03,
+      "sharpe_ratio": 2.52,
+      "max_drawdown": 7.24,
+      "win_rate": 60.56,
+      "profit_loss_ratio": 1.99,
+      "total_trades": 142
+    },
+    "scheme_A_conservative": {
+      "total_return": 40.56,
+      "sharpe_ratio": 2.59,
+      "max_drawdown": 6.06,
+      "win_rate": 57.89,
+      "profit_loss_ratio": 2.37,
+      "total_trades": 95
+    },
+    "scheme_B_balanced": {
+      "total_return": 46.26,
+      "sharpe_ratio": 2.65,
+      "max_drawdown": 6.2,
+      "win_rate": 61.27,
+      "profit_loss_ratio": 2.02,
+      "total_trades": 142
+    }
+  },
+  "serenity_recommendation": "方案B(平衡型) - 在信号质量与交易机会之间取得最佳平衡",
+  "report_text": "===============================================================\n  Serenity 信号权重评估报告\n===============================================================\n\n[评估1: 信号一致性分析]\n  3层一致: 胜率 62.2%, 交易数 74, 平均收益 2.9%\n  2层一致: 胜率 58.8%, 交易数 68, 平均收益 1.77%\n  1层一致: 胜率 0%, 交易数 0, 平均收益 0%\n  0层一致: 胜率 0%, 交易数 0, 平均收益 0%\n  -> Serenity建议: 两层一致时已有明显优势，可适当放宽至两层一致，但一层一致时应回避\n\n[评估2: 趋势强度过滤]\n  强趋势: 胜率 60.6%, 交易数 142\n  中趋势: 胜率 0%, 交易数 0\n  弱趋势: 胜率 0%, 交易数 0\n  -> Serenity建议: 强趋势下胜率显著优于弱趋势，建议只在强/中趋势时交易\n\n[评估3: 止损纪律评估]\n  止损出场交易数: 22\n  止损后5日继续下跌比例: 77.3%\n  止损后5日反弹比例: 22.7%\n  -> Serenity建议: 止损后大部分继续下跌，说明10%止损设置合理，纪律执行良好\n\n[评估4: 交易频率与质量]\n  月均交易数: 7.9\n  高频率月(>30笔)平均胜率: 0%\n  低频率月(<15笔)平均胜率: 57.3%\n  -> Serenity建议: 高频交易月胜率反而更低，验证了'质量优于数量'原则，应减少交易频率\n\n[评估5: 连续亏损/盈利分析]\n  连亏3次后下一笔胜率: 55.6% (样本数: 9)\n  连盈3次后下一笔胜率: 58.6% (样本数: 29)\n  -> Serenity建议: 连亏后胜率55.6% vs 连盈后58.6%，差异不大，情绪化交易风险较低\n\n===============================================================\n  三方案回测对比\n===============================================================\n  指标           方案C(基准)        方案A(保守)        方案B(平衡)       \n  --------------------------------------------------------\n  总收益率         49.03%         40.56%         46.26%        \n  夏普           2.52           2.59           2.65          \n  最大回撤         7.24%          6.06%          6.20%         \n  胜率           60.56%         57.89%         61.27%        \n  盈亏比          1.99           2.37           2.02          \n  交易数          142            95             142           \n\n  -> Serenity推荐方案: 方案B(平衡型) - 在信号质量与交易机会之间取得最佳平衡\n\n==============================================================="
+}

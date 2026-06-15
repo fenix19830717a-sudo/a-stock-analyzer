@@ -1,0 +1,27 @@
+{
+  "generate_time": "2026-06-11 16:57:16",
+  "index_signal": "中性",
+  "model_info": {
+    "up_model": {
+      "auc": 0.8599334426286822,
+      "n_samples": 78730
+    },
+    "down_model": {
+      "auc": 0.9152429750130002
+    },
+    "index_ensemble": {
+      "auc": 0.7925531914893617
+    }
+  },
+  "scoring_weights": {
+    "w_up": 30,
+    "w_adx": 0.1,
+    "threshold": 0.5
+  },
+  "scan_summary": {
+    "total_scanned": 800,
+    "valid_stocks": 0,
+    "pick_count": 0
+  },
+  "picks": []
+}

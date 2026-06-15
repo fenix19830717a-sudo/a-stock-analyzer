@@ -11,6 +11,8 @@ Review阶段: 次日对决策分析结果进行复核，输出优化建议
 
 import os
 import sys
+import json
+import dataclasses
 from datetime import datetime, timedelta
 from typing import Optional
 
@@ -23,7 +25,7 @@ from src.utils.logger import get_logger, setup_logging
 from src.data.database import init_db, get_db
 from src.data.data_source import DataSourceManager
 from src.models.feature_engineering import FeatureEngineer
-from src.models.hmm_engine import SupervisedHMM, HMMTrendAnalyzer, HMMTrainingPipeline
+from src.models.hmm_engine import SupervisedHMM, HMMTrendAnalyzer, HMMTrainingPipeline, StockHMM
 from src.models.technical_factors import TechnicalFactorStrategy
 from src.ai_debate.debate_engine import DebateEngine, ReviewAnalyzer
 from src.ai_debate.llm_client import LLMClient
@@ -60,12 +62,17 @@ class AStockAnalyzer:
         # 初始化特征工程
         self.feature_engineer = FeatureEngineer()
 
-        # 初始化HMM引擎
+        # 初始化HMM引擎（延迟训练，首次分析时自动训练）
         self.hmm_engine = HMMTrendAnalyzer(
-            market_hmm=SupervisedHMM("market", n_components=5),
+            market_hmm=None,
             sector_hmms={},
             stock_hmms={}
         )
+        self._hmm_trained_symbols = {}
+
+        # 尝试加载预训练HMM模型
+        self._hmm_model_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'hmm_models')
+        self._load_pretrained_hmms()
 
         # 初始化技术面因子
         self.technical_engine = TechnicalFactorStrategy()
@@ -97,6 +104,39 @@ class AStockAnalyzer:
 
         logger.info("所有模块初始化完成")
 
+    def _load_pretrained_hmms(self):
+        """加载预训练的HMM模型"""
+        if not os.path.exists(self._hmm_model_dir):
+            logger.info("未找到预训练HMM模型目录，将在分析时自动训练")
+            return
+        import pickle
+        count = 0
+        for filename in os.listdir(self._hmm_model_dir):
+            if filename.endswith('.pkl'):
+                try:
+                    filepath = os.path.join(self._hmm_model_dir, filename)
+                    stock_hmm = StockHMM.load(filepath)
+                    symbol = stock_hmm.name.replace('StockHMM_', '')
+                    self.hmm_engine.stock_hmms[symbol] = stock_hmm
+                    self._hmm_trained_symbols[symbol] = True
+                    count += 1
+                except Exception as e:
+                    logger.warning(f"加载HMM模型失败 {filename}: {e}")
+        logger.info(f"已加载 {count} 个预训练HMM模型")
+
+    def save_trained_hmms(self):
+        """保存所有已训练的HMM模型"""
+        os.makedirs(self._hmm_model_dir, exist_ok=True)
+        count = 0
+        for symbol, stock_hmm in self.hmm_engine.stock_hmms.items():
+            try:
+                filepath = os.path.join(self._hmm_model_dir, f"{symbol}.pkl")
+                stock_hmm.save(filepath)
+                count += 1
+            except Exception as e:
+                logger.warning(f"保存HMM模型失败 {symbol}: {e}")
+        logger.info(f"已保存 {count} 个HMM模型到 {self._hmm_model_dir}")
+
     def analyze_stock(self, symbol: str) -> dict:
         """
         对单只股票执行完整的三层决策分析
@@ -112,7 +152,7 @@ class AStockAnalyzer:
         # 获取数据
         end_date = datetime.now()
         start_date = end_date - timedelta(days=180)
-        df = self.data_source.get_daily_data(symbol, start_date, end_date)
+        df = self.data_source.get_kline(symbol, start_date.strftime("%Y%m%d"), end_date.strftime("%Y%m%d"))
 
         if df is None or len(df) < 60:
             return {"error": "数据不足，无法分析"}
@@ -122,11 +162,31 @@ class AStockAnalyzer:
 
         # Layer 1: HMM趋势定性分析 (程序化)
         logger.info("Layer 1: HMM趋势定性分析")
-        trend_result = self.hmm_engine.predict_trend(df)
+
+        # 自动训练HMM（如果尚未训练该股票）
+        if symbol not in self._hmm_trained_symbols:
+            try:
+                features, labels = self.feature_engineer.prepare_features(df, enhanced=False)
+                if len(features) >= 30:
+                    stock_hmm = StockHMM(symbol, n_components=4)
+                    stock_hmm.fit_with_scaling(features.values, labels.values)
+                    self.hmm_engine.stock_hmms[symbol] = stock_hmm
+                    self._hmm_trained_symbols[symbol] = True
+                    logger.info(f"HMM自动训练完成: {symbol}")
+                    # 自动保存新训练的模型
+                    try:
+                        os.makedirs(self._hmm_model_dir, exist_ok=True)
+                        stock_hmm.save(os.path.join(self._hmm_model_dir, f"{symbol}.pkl"))
+                    except Exception as e:
+                        logger.warning(f"自动保存HMM失败: {e}")
+            except Exception as e:
+                logger.warning(f"HMM自动训练失败 {symbol}: {e}")
+
+        trend_result = self.hmm_engine.analyze_trend(symbol, df)
 
         # Layer 2: 技术面因子策略信号 (程序化)
         logger.info("Layer 2: 技术面因子策略信号")
-        signal_report = self.technical_engine.generate_signals(df)
+        signal_report = self.technical_engine.generate_signal(symbol, df, trend_result)
 
         # Layer 3: AI辩论决策分析
         logger.info("Layer 3: AI辩论决策分析")
@@ -146,7 +206,7 @@ class AStockAnalyzer:
         self.review_scheduler.schedule_review(
             symbol=symbol,
             prediction_date=datetime.now(),
-            prediction_data=forecast.to_dict()
+            prediction_data=dataclasses.asdict(forecast)
         )
 
         result = {
@@ -157,40 +217,47 @@ class AStockAnalyzer:
             'layer1_trend': trend_result,
             'layer2_signal': signal_report,
             'layer3_debate': debate_result,
-            'forecast': forecast.to_dict()
+            'forecast': dataclasses.asdict(forecast)
         }
 
         logger.info(f"股票分析完成: {symbol}")
         return result
 
     def screen_stocks(self, stock_pool: Optional[list] = None) -> list:
-        """
-        股票筛选
-
-        Args:
-            stock_pool: 股票池，None则使用默认沪深300成分股
-
-        Returns:
-            筛选后的股票列表及评分
-        """
+        """股票筛选"""
         logger.info("开始股票筛选")
 
         if stock_pool is None:
-            # 获取沪深300成分股
-            stock_pool = self.data_source.get_index_components('000300.SH')
+            stock_pool_df = self.data_source.get_stock_list()
+            stock_pool = stock_pool_df['symbol'].tolist() if stock_pool_df is not None and not stock_pool_df.empty else []
 
         results = []
         for symbol in stock_pool:
             try:
-                score = self.screener.screen(symbol)
-                if score['passed']:
-                    results.append(score)
+                # 获取数据用于筛选
+                end_date = datetime.now()
+                start_date = end_date - timedelta(days=60)
+                df = self.data_source.get_kline(symbol, start_date.strftime("%Y%m%d"), end_date.strftime("%Y%m%d"))
+                if df is not None and len(df) >= 20:
+                    filtered = self.screener.filter_by_technical(df, {
+                            'turnover_min': 0, 'turnover_max': 100,
+                            'volume_ratio_min': 0,
+                            'ma_cross': None,
+                            'trend': None,
+                            'price_range': None
+                        })
+                    if filtered is not None and not filtered.empty:
+                        score = {
+                            'symbol': symbol,
+                            'passed': True,
+                            'composite_score': filtered.iloc[0].get('composite_score', 0.5) if 'composite_score' in filtered.columns else 0.5,
+                            'data': filtered
+                        }
+                        results.append(score)
             except Exception as e:
                 logger.warning(f"筛选 {symbol} 失败: {e}")
 
-        # 按综合评分排序
         results.sort(key=lambda x: x['composite_score'], reverse=True)
-
         logger.info(f"筛选完成: {len(results)}只股票通过")
         return results
 
@@ -264,7 +331,7 @@ class AStockAnalyzer:
 
         for symbol in symbols:
             try:
-                df = self.data_source.get_daily_data(symbol, datetime.now() - timedelta(days=5), datetime.now())
+                df = self.data_source.get_kline(symbol, (datetime.now() - timedelta(days=5)).strftime("%Y%m%d"), datetime.now().strftime("%Y%m%d"))
                 if df is not None and len(df) > 0:
                     latest = df.iloc[-1]
                     prev = df.iloc[-2] if len(df) > 1 else latest

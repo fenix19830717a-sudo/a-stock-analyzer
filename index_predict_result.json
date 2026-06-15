@@ -1,0 +1,395 @@
+{
+  "generate_time": "2026-06-09 23:47:04",
+  "model_metrics": {
+    "model_1d_direction": {
+      "accuracy": 0.8082,
+      "f1_macro": 0.298,
+      "auc_ovr": NaN,
+      "class_report": {
+        "涨": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 24
+        },
+        "平": {
+          "precision": 0.8216,
+          "recall": 0.9802,
+          "f1": 0.8939,
+          "support": 202
+        },
+        "跌": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 19
+        }
+      },
+      "feature_importance_top15": [
+        {
+          "feature": "atr_price_ratio",
+          "importance": 0.03020000085234642
+        },
+        {
+          "feature": "kd_divergence",
+          "importance": 0.020800000056624413
+        },
+        {
+          "feature": "ma_spread_5_60",
+          "importance": 0.01979999989271164
+        },
+        {
+          "feature": "momentum_20d",
+          "importance": 0.019700000062584877
+        },
+        {
+          "feature": "kdj_stoch",
+          "importance": 0.01860000006854534
+        },
+        {
+          "feature": "width_5d",
+          "importance": 0.01850000023841858
+        },
+        {
+          "feature": "width_gradient",
+          "importance": 0.018300000578165054
+        },
+        {
+          "feature": "ma5_slope",
+          "importance": 0.017999999225139618
+        },
+        {
+          "feature": "boll_width",
+          "importance": 0.017999999225139618
+        },
+        {
+          "feature": "momentum_5d",
+          "importance": 0.017899999395012856
+        },
+        {
+          "feature": "vol_expansion",
+          "importance": 0.017799999564886093
+        },
+        {
+          "feature": "atr_14",
+          "importance": 0.017799999564886093
+        },
+        {
+          "feature": "boll_squeeze",
+          "importance": 0.017500000074505806
+        },
+        {
+          "feature": "j",
+          "importance": 0.01720000058412552
+        },
+        {
+          "feature": "momentum_10d",
+          "importance": 0.017000000923871994
+        }
+      ]
+    },
+    "model_2d_direction": {
+      "accuracy": 0.9306,
+      "f1_macro": 0.3214,
+      "auc_ovr": NaN,
+      "class_report": {
+        "涨": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 7
+        },
+        "平": {
+          "precision": 0.9306,
+          "recall": 1.0,
+          "f1": 0.9641,
+          "support": 228
+        },
+        "跌": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 10
+        }
+      },
+      "feature_importance_top15": [
+        {
+          "feature": "atr_price_ratio",
+          "importance": 0.0333000011742115
+        },
+        {
+          "feature": "kd_divergence",
+          "importance": 0.02250000089406967
+        },
+        {
+          "feature": "atr_expansion",
+          "importance": 0.021900000050663948
+        },
+        {
+          "feature": "dif",
+          "importance": 0.021400000900030136
+        },
+        {
+          "feature": "ma20_slope",
+          "importance": 0.020099999383091927
+        },
+        {
+          "feature": "dif_position",
+          "importance": 0.019200000911951065
+        },
+        {
+          "feature": "volatility_5d",
+          "importance": 0.01860000006854534
+        },
+        {
+          "feature": "ma5",
+          "importance": 0.01860000006854534
+        },
+        {
+          "feature": "boll_breakout_down",
+          "importance": 0.018400000408291817
+        },
+        {
+          "feature": "ma10",
+          "importance": 0.01810000091791153
+        },
+        {
+          "feature": "ma_spread_5_20",
+          "importance": 0.017799999564886093
+        },
+        {
+          "feature": "width_gradient",
+          "importance": 0.017799999564886093
+        },
+        {
+          "feature": "ma_spread_20_60",
+          "importance": 0.01769999973475933
+        },
+        {
+          "feature": "dea",
+          "importance": 0.01759999990463257
+        },
+        {
+          "feature": "volatility_20d",
+          "importance": 0.01759999990463257
+        }
+      ]
+    },
+    "model_3d_direction": {
+      "accuracy": 0.9837,
+      "f1_macro": 0.3306,
+      "auc_ovr": NaN,
+      "class_report": {
+        "涨": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1
+        },
+        "平": {
+          "precision": 0.9837,
+          "recall": 1.0,
+          "f1": 0.9918,
+          "support": 241
+        },
+        "跌": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3
+        }
+      },
+      "feature_importance_top15": [
+        {
+          "feature": "kd_divergence",
+          "importance": 0.03550000116229057
+        },
+        {
+          "feature": "vol_expansion",
+          "importance": 0.027699999511241913
+        },
+        {
+          "feature": "ma60",
+          "importance": 0.024399999529123306
+        },
+        {
+          "feature": "atr_expansion",
+          "importance": 0.02250000089406967
+        },
+        {
+          "feature": "atr_price_ratio",
+          "importance": 0.0215000007301569
+        },
+        {
+          "feature": "dif",
+          "importance": 0.0210999995470047
+        },
+        {
+          "feature": "ma_spread_20_60",
+          "importance": 0.020500000566244125
+        },
+        {
+          "feature": "dif_position",
+          "importance": 0.020400000736117363
+        },
+        {
+          "feature": "volatility_5d",
+          "importance": 0.020099999383091927
+        },
+        {
+          "feature": "kdj_stoch",
+          "importance": 0.019600000232458115
+        },
+        {
+          "feature": "ma5_slope",
+          "importance": 0.018699999898672104
+        },
+        {
+          "feature": "momentum_5d",
+          "importance": 0.01850000023841858
+        },
+        {
+          "feature": "ma20_slope",
+          "importance": 0.017999999225139618
+        },
+        {
+          "feature": "streak",
+          "importance": 0.017999999225139618
+        },
+        {
+          "feature": "momentum_gradient",
+          "importance": 0.01769999973475933
+        }
+      ]
+    },
+    "model_1d_regression": {
+      "mse": 6.2e-05,
+      "mae": 0.005897,
+      "r2": -0.007,
+      "direction_accuracy": 0.5837,
+      "feature_importance_top15": [
+        {
+          "feature": "ma5",
+          "importance": 0.0
+        },
+        {
+          "feature": "ma10",
+          "importance": 0.0
+        },
+        {
+          "feature": "ma20",
+          "importance": 0.0
+        },
+        {
+          "feature": "ma60",
+          "importance": 0.0
+        },
+        {
+          "feature": "ma120",
+          "importance": 0.0
+        },
+        {
+          "feature": "dif",
+          "importance": 0.0
+        },
+        {
+          "feature": "dea",
+          "importance": 0.0
+        },
+        {
+          "feature": "macd_hist",
+          "importance": 0.0
+        },
+        {
+          "feature": "rsi_6",
+          "importance": 0.0
+        },
+        {
+          "feature": "rsi_14",
+          "importance": 0.0
+        },
+        {
+          "feature": "rsi_24",
+          "importance": 0.0
+        },
+        {
+          "feature": "boll_pos",
+          "importance": 0.0
+        },
+        {
+          "feature": "boll_width",
+          "importance": 0.0
+        },
+        {
+          "feature": "k",
+          "importance": 0.0
+        },
+        {
+          "feature": "d",
+          "importance": 0.0
+        }
+      ]
+    }
+  },
+  "market_status": {
+    "latest_date": "2026-06-04",
+    "latest_status": "中性震荡",
+    "latest_predictions": {
+      "1d": {
+        "direction": 0,
+        "up_prob": 0.0765,
+        "down_prob": 0.1711
+      },
+      "2d": {
+        "direction": 0,
+        "up_prob": 0.1244,
+        "down_prob": 0.0243
+      },
+      "3d": {
+        "direction": 0,
+        "up_prob": 0.0192,
+        "down_prob": 0.0093
+      }
+    },
+    "status_distribution": {
+      "中性震荡": 241,
+      "偏空震荡": 4
+    },
+    "rules": {
+      "强势上涨": "模型1看涨 + 模型2看涨 + 模型3看涨",
+      "偏多震荡": "模型1看涨 + (模型2或3非涨)",
+      "中性震荡": "模型1看平 + (模型2和3非一致看涨/看跌)",
+      "偏空震荡": "模型1看跌 + (模型2或3非跌)",
+      "强势下跌": "模型1看跌 + 模型2看跌 + 模型3看跌"
+    }
+  },
+  "backtest": {
+    "backtest_period": "2025-06-03 ~ 2026-06-04",
+    "trading_days": 245,
+    "direction_accuracy": {
+      "1d": 0.0776,
+      "2d": 0.0408,
+      "3d": 0.0122,
+      "regression": 0.5837
+    },
+    "strategy_1d": {
+      "trade_count": 0,
+      "win_rate": 0.0,
+      "profit_loss_ratio": 0.0,
+      "cumulative_return": 1.0
+    },
+    "strategy_2d": {
+      "trade_count": 0,
+      "win_rate": 0.0,
+      "cumulative_return": 1.0
+    },
+    "strategy_3d": {
+      "trade_count": 0,
+      "win_rate": 0.0,
+      "cumulative_return": 1.0
+    },
+    "benchmark": {
+      "cumulative_return": 1.198
+    }
+  }
+}

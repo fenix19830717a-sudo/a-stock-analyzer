@@ -1,0 +1,29 @@
+{
+  "total_stocks": 300,
+  "success_data": 298,
+  "success_hmm": 298,
+  "backtest_period": "2024-01-01 ~ 2024-12-31",
+  "total_return": -0.0067,
+  "annual_return": -0.0067,
+  "sharpe_ratio": 0.0462,
+  "max_drawdown": 0.2353,
+  "win_rate": 0.359,
+  "profit_factor": 0.998,
+  "total_trades": 156,
+  "avg_holding_days": 10.3,
+  "exit_reasons": {
+    "stop_loss": 90,
+    "take_profit": 24,
+    "timeout": 32,
+    "signal_reverse": 5,
+    "backtest_end": 5
+  },
+  "validations": [
+    "[PASSED] 有效交易数 > 0 (实际: 156)",
+    "[PASSED] 回测有实际交易发生 (总收益率: -0.67%)",
+    "[PASSED] 最大回撤 < 50% (实际: 23.53%)",
+    "[PASSED] 夏普比率 > -2 (实际: 0.05)",
+    "[PASSED] 回测逻辑正常执行"
+  ],
+  "final_capital": 993345.96
+}

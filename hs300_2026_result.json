@@ -1,0 +1,57 @@
+{
+  "total_stocks": 300,
+  "success_data": 300,
+  "success_hmm": 300,
+  "data_range": "2023-06-01 ~ 2026-06-05",
+  "backtest_period": "2025-01-01 ~ 2026-06-05",
+  "params": {
+    "stop_loss_pct": 0.1,
+    "take_profit_pct": 0.15,
+    "max_holding_days": 10,
+    "buy_threshold": 0.6,
+    "sell_threshold": 0.5,
+    "max_positions": 8,
+    "position_size": 0.15
+  },
+  "total_return": 1.2516532999999999,
+  "annual_return": 0.7677829948471104,
+  "sharpe_ratio": 3.3309830401169176,
+  "max_drawdown": 0.129151983700175,
+  "win_rate": 0.569047619047619,
+  "profit_factor": 2.1681424902323725,
+  "total_trades": 420,
+  "avg_holding_days": 8.030952380952382,
+  "exit_reasons": {
+    "signal_reverse": 97,
+    "take_profit": 45,
+    "timeout": 236,
+    "stop_loss": 35,
+    "backtest_end": 7
+  },
+  "final_capital": 2251653.3,
+  "compare_2024": {
+    "backtest_period": "2024-01-01 ~ 2024-12-31",
+    "total_return": 0.45910922,
+    "annual_return": 0.45910922,
+    "sharpe_ratio": 1.6704550286605169,
+    "max_drawdown": 0.17293123160481763,
+    "win_rate": 0.5680272108843537,
+    "profit_factor": 1.6429563335377932,
+    "total_trades": 294,
+    "exit_reasons": {
+      "signal_reverse": 81,
+      "timeout": 167,
+      "take_profit": 17,
+      "stop_loss": 22,
+      "backtest_end": 7
+    },
+    "final_capital": 1459109.22
+  },
+  "validations": [
+    "[PASSED] 有效交易数 > 0 (实际: 420)",
+    "[PASSED] 回测有实际交易发生 (总收益率: 125.17%)",
+    "[PASSED] 最大回撤 < 50% (实际: 12.92%)",
+    "[PASSED] 夏普比率 > -2 (实际: 3.33)",
+    "[PASSED] 回测逻辑正常执行"
+  ]
+}

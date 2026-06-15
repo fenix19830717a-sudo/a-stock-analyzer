@@ -1,0 +1,158 @@
+{
+  "date": "2026-06-09 12:55",
+  "pool_size": 700,
+  "analyzed": 700,
+  "hmm_covered": 265,
+  "top_picks": [
+    {
+      "code": "600998",
+      "name": "九州通",
+      "price": 4.79,
+      "hmm_up_prob": 0.5,
+      "signal": "强烈买入",
+      "comp_score": 95,
+      "hmm_trend": "上涨",
+      "model": "规则"
+    },
+    {
+      "code": "601156",
+      "name": "东航物流",
+      "price": 15.99,
+      "hmm_up_prob": 0.5,
+      "signal": "强烈买入",
+      "comp_score": 95,
+      "hmm_trend": "偏空震荡",
+      "model": "规则"
+    },
+    {
+      "code": "000333",
+      "name": "美的集团",
+      "price": 82.85,
+      "hmm_up_prob": 0.25,
+      "signal": "强烈买入",
+      "comp_score": 95,
+      "hmm_trend": "下跌",
+      "model": "HMM"
+    },
+    {
+      "code": "601009",
+      "name": "南京银行",
+      "price": 11.36,
+      "hmm_up_prob": 0.25,
+      "signal": "强烈买入",
+      "comp_score": 95,
+      "hmm_trend": "下跌",
+      "model": "HMM"
+    },
+    {
+      "code": "000951",
+      "name": "中国重汽",
+      "price": 23.26,
+      "hmm_up_prob": 0.5,
+      "signal": "强烈买入",
+      "comp_score": 90,
+      "hmm_trend": "上涨",
+      "model": "规则"
+    },
+    {
+      "code": "600007",
+      "name": "中国国贸",
+      "price": 22.25,
+      "hmm_up_prob": 0.5,
+      "signal": "强烈买入",
+      "comp_score": 90,
+      "hmm_trend": "上涨",
+      "model": "规则"
+    },
+    {
+      "code": "600906",
+      "name": "财达证券",
+      "price": 6.81,
+      "hmm_up_prob": 0.5,
+      "signal": "强烈买入",
+      "comp_score": 90,
+      "hmm_trend": "上涨",
+      "model": "规则"
+    },
+    {
+      "code": "600522",
+      "name": "中天科技",
+      "price": 49.53,
+      "hmm_up_prob": 0.25,
+      "signal": "强烈买入",
+      "comp_score": 90,
+      "hmm_trend": "下跌",
+      "model": "HMM"
+    },
+    {
+      "code": "601100",
+      "name": "恒立液压",
+      "price": 119.77,
+      "hmm_up_prob": 0.25,
+      "signal": "强烈买入",
+      "comp_score": 90,
+      "hmm_trend": "下跌",
+      "model": "HMM"
+    },
+    {
+      "code": "601398",
+      "name": "工商银行",
+      "price": 7.5,
+      "hmm_up_prob": 0.25,
+      "signal": "强烈买入",
+      "comp_score": 90,
+      "hmm_trend": "下跌",
+      "model": "HMM"
+    },
+    {
+      "code": "000598",
+      "name": "兴蓉环境",
+      "price": 6.75,
+      "hmm_up_prob": 0.5,
+      "signal": "强烈买入",
+      "comp_score": 85,
+      "hmm_trend": "偏空震荡",
+      "model": "规则"
+    },
+    {
+      "code": "000723",
+      "name": "美锦能源",
+      "price": 4.22,
+      "hmm_up_prob": 0.5,
+      "signal": "强烈买入",
+      "comp_score": 85,
+      "hmm_trend": "震荡",
+      "model": "规则"
+    },
+    {
+      "code": "000785",
+      "name": "居然智家",
+      "price": 2.72,
+      "hmm_up_prob": 0.5,
+      "signal": "强烈买入",
+      "comp_score": 85,
+      "hmm_trend": "上涨",
+      "model": "规则"
+    },
+    {
+      "code": "000937",
+      "name": "冀中能源",
+      "price": 5.7,
+      "hmm_up_prob": 0.5,
+      "signal": "强烈买入",
+      "comp_score": 85,
+      "hmm_trend": "震荡",
+      "model": "规则"
+    },
+    {
+      "code": "600008",
+      "name": "首创环保",
+      "price": 3.07,
+      "hmm_up_prob": 0.5,
+      "signal": "强烈买入",
+      "comp_score": 85,
+      "hmm_trend": "偏空震荡",
+      "model": "规则"
+    }
+  ]
+}
